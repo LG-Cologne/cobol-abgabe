@@ -9,55 +9,55 @@ In Abbildung~\ref{fig:diagramm3} wird der Ablauf des Explizimodus visualisiert.
 Die Ermittlung eines Wortes, aus einem eingegebenen T9-Code, kann in Abbildung~\ref{fig:diagramm4} beobachtet werden.
 
 
-\begin{figure}[!h]
-    \centering
-    \includegraphics[scale=0.9,width=\textwidth,height=\textheight,keepaspectratio]{Benutzerdialog}
-    \caption{
-        Benutzerdialog: Konstruieren von Sätzen aus Sicht des Anwenders.
-%        Zunächst werden Wörter eingelesen, falls der Satz beendet wird, wird er ausgegeben.
-%        Das Programm wird beendet, falls der finale Satz leer ist und ein Punkt eingegeben wird.
-    }
-    \label{fig:diagramm1}
-\end{figure}
+% \begin{figure}[!h]
+%     \centering
+%     \includegraphics[scale=0.9,width=\textwidth,height=\textheight,keepaspectratio]{Benutzerdialog}
+%     \caption{
+%         Benutzerdialog: Konstruieren von Sätzen aus Sicht des Anwenders.
+% %        Zunächst werden Wörter eingelesen, falls der Satz beendet wird, wird er ausgegeben.
+% %        Das Programm wird beendet, falls der finale Satz leer ist und ein Punkt eingegeben wird.
+%     }
+%     \label{fig:diagramm1}
+% \end{figure}
 
-\begin{figure}[!h]
-    \centering
-    \includegraphics[width=\textwidth,height=\textheight,keepaspectratio]{Einlesen_WBuch1}
-    \caption{
-        Einlesen eines externen Wörterbuchs.
-%        Der Benutzer wird gefragt, ob ein externes Wörterbuch eingelesen werden soll.
-%        Der Benutzer möchte ein externes Wörterbuch einlesen, dann wird jeder Datensatz gelesen, geprüft und in das interne Wörterbuch gespeichert, wenn die Prüfung des Datensatzes erfolgreich war.
-%        Das Einlesen wird abgebrochen, sobald ein Fehler in der Prüfung ist.
-%        Falls die einzulesende Datei nicht gefunden wird, fängt die Methode von vorne an.
-%        Wenn der Benutzer kein externes Wörterbuch nutzen möchte, wird ein neues erstellt.
-    }
-    \label{fig:diagramm2}
-\end{figure}
+% \begin{figure}[!h]
+%     \centering
+%     \includegraphics[width=\textwidth,height=\textheight,keepaspectratio]{Einlesen_WBuch1}
+%     \caption{
+%         Einlesen eines externen Wörterbuchs.
+% %        Der Benutzer wird gefragt, ob ein externes Wörterbuch eingelesen werden soll.
+% %        Der Benutzer möchte ein externes Wörterbuch einlesen, dann wird jeder Datensatz gelesen, geprüft und in das interne Wörterbuch gespeichert, wenn die Prüfung des Datensatzes erfolgreich war.
+% %        Das Einlesen wird abgebrochen, sobald ein Fehler in der Prüfung ist.
+% %        Falls die einzulesende Datei nicht gefunden wird, fängt die Methode von vorne an.
+% %        Wenn der Benutzer kein externes Wörterbuch nutzen möchte, wird ein neues erstellt.
+%     }
+%     \label{fig:diagramm2}
+% \end{figure}
 
-\begin{figure}[!h]
-    \centering
-    \includegraphics[width=\textwidth,height=\textheight,keepaspectratio]{Explizitmodus}
-    \caption{
-        Ablauf des Explizitmodus.
-%        Zunächst gibt der Benutzer ein Wort in expliziter Darstellung ein.
-%        Dieses wird geprüft und danach konstruiert.
-%        Der Benutzer prüft das konstruierte Wort, falls das Wort dem Wunsch des Benutzers entspricht, wird noch geschaut, ob es im Wörterbuch bereits vorhanden ist.
-%        Wenn es schon vorhanden war, wird die Häufigkeit erhöht, sonst wird das neue Wort mit dem zugehörigen Code und der Häufigkeit eins dem Wörterbuch hinzugefügt.
-    }
-    \label{fig:diagramm3}
-\end{figure}
+% \begin{figure}[!h]
+%     \centering
+%     \includegraphics[width=\textwidth,height=\textheight,keepaspectratio]{Explizitmodus}
+%     \caption{
+%         Ablauf des Explizitmodus.
+% %        Zunächst gibt der Benutzer ein Wort in expliziter Darstellung ein.
+% %        Dieses wird geprüft und danach konstruiert.
+% %        Der Benutzer prüft das konstruierte Wort, falls das Wort dem Wunsch des Benutzers entspricht, wird noch geschaut, ob es im Wörterbuch bereits vorhanden ist.
+% %        Wenn es schon vorhanden war, wird die Häufigkeit erhöht, sonst wird das neue Wort mit dem zugehörigen Code und der Häufigkeit eins dem Wörterbuch hinzugefügt.
+%     }
+%     \label{fig:diagramm3}
+% \end{figure}
 
-\begin{figure}[!h]
-    % \centering
-    \includegraphics[width=\textwidth,height=\textheight,keepaspectratio]{Wort_ermitteln}
-    \caption{
-        Ermitteln eines Wortes.
-%        Wort ermitteln: Zu Beginn wird im Wörterbuch geschaut, ob der eingegebene Code vorhanden ist.
-%        Die Treffer werden dem Benutzer nacheinander angezeigt, je nach der Benutzerrückmeldung wird der nächste Vorschlag angezeigt oder an den Satz angefügt.
-%        Falls die Trefferanzahl gleich null ist, wird der Benutzer in den Explizitmodus weitergeleitet.
-    }
-    \label{fig:diagramm4}
-\end{figure}
+% \begin{figure}[!h]
+%     % \centering
+%     \includegraphics[width=\textwidth,height=\textheight,keepaspectratio]{Wort_ermitteln}
+%     \caption{
+%         Ermitteln eines Wortes.
+% %        Wort ermitteln: Zu Beginn wird im Wörterbuch geschaut, ob der eingegebene Code vorhanden ist.
+% %        Die Treffer werden dem Benutzer nacheinander angezeigt, je nach der Benutzerrückmeldung wird der nächste Vorschlag angezeigt oder an den Satz angefügt.
+% %        Falls die Trefferanzahl gleich null ist, wird der Benutzer in den Explizitmodus weitergeleitet.
+%     }
+%     \label{fig:diagramm4}
+% \end{figure}
 
 
 \section{Entwicklungsdokumentation}\label{sec:entwicklerdokumentation}
