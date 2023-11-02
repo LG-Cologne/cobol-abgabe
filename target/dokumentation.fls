@@ -868,21 +868,15 @@ INPUT target/dokumentation.aux
 INPUT target/title.aux
 INPUT target/title.aux
 INPUT target/title.aux
-INPUT target/chapters/1-Aufgabenanalyse.aux
-INPUT target/chapters/1-Aufgabenanalyse.aux
-INPUT target/chapters/1-Aufgabenanalyse.aux
-INPUT target/chapters/2-Verfahrensbeschreibung.aux
-INPUT target/chapters/2-Verfahrensbeschreibung.aux
-INPUT target/chapters/2-Verfahrensbeschreibung.aux
-INPUT target/chapters/3-Programmbeschreibung.aux
-INPUT target/chapters/3-Programmbeschreibung.aux
-INPUT target/chapters/3-Programmbeschreibung.aux
-INPUT target/chapters/4-Testdokumentation.aux
-INPUT target/chapters/4-Testdokumentation.aux
-INPUT target/chapters/4-Testdokumentation.aux
-INPUT target/chapters/5-ZusammenfassungUndAusblick.aux
-INPUT target/chapters/5-ZusammenfassungUndAusblick.aux
-INPUT target/chapters/5-ZusammenfassungUndAusblick.aux
+INPUT target/chapters/1-Programmentwurf.aux
+INPUT target/chapters/1-Programmentwurf.aux
+INPUT target/chapters/1-Programmentwurf.aux
+INPUT target/chapters/2-Mathematische_Verfahrensbeschreibung.aux
+INPUT target/chapters/2-Mathematische_Verfahrensbeschreibung.aux
+INPUT target/chapters/2-Mathematische_Verfahrensbeschreibung.aux
+INPUT target/chapters/3-Testdokumentation.aux
+INPUT target/chapters/3-Testdokumentation.aux
+INPUT target/chapters/3-Testdokumentation.aux
 INPUT target/chapters/B-Benutzeranleitung.aux
 INPUT target/chapters/B-Benutzeranleitung.aux
 INPUT target/chapters/B-Benutzeranleitung.aux
@@ -1094,80 +1088,48 @@ INPUT target/dokumentation.toc
 INPUT target/dokumentation.toc
 INPUT /usr/local/texlive/2022/texmf-dist/fonts/tfm/public/lm/ec-lmro12.tfm
 OUTPUT target/dokumentation.toc
-INPUT ./chapters/1-Aufgabenanalyse.tex
-INPUT ./chapters/1-Aufgabenanalyse.tex
-INPUT ./chapters/1-Aufgabenanalyse.tex
-OUTPUT target/chapters/1-Aufgabenanalyse.aux
-INPUT ./chapters/1-Aufgabenanalyse.tex
-INPUT ./chapters/1-Aufgabenanalyse.tex
-INPUT ./chapters/1-Aufgabenanalyse.tex
-INPUT chapters/1-Aufgabenanalyse.tex
-INPUT ./chapters/1-Aufgabenanalyse.tex
-INPUT chapters/1-Aufgabenanalyse.tex
+INPUT ./chapters/1-Programmentwurf.tex
+INPUT ./chapters/1-Programmentwurf.tex
+INPUT ./chapters/1-Programmentwurf.tex
+OUTPUT target/chapters/1-Programmentwurf.aux
+INPUT ./chapters/1-Programmentwurf.tex
+INPUT ./chapters/1-Programmentwurf.tex
+INPUT ./chapters/1-Programmentwurf.tex
+INPUT chapters/1-Programmentwurf.tex
+INPUT ./chapters/1-Programmentwurf.tex
+INPUT chapters/1-Programmentwurf.tex
 INPUT /usr/local/texlive/2022/texmf-dist/fonts/tfm/public/lm/ec-lmssbx10.tfm
-INPUT /usr/local/texlive/2022/texmf-dist/fonts/tfm/public/lm/ec-lmri12.tfm
+INPUT ./chapters/2-Mathematische_Verfahrensbeschreibung.tex
+INPUT ./chapters/2-Mathematische_Verfahrensbeschreibung.tex
+INPUT ./chapters/2-Mathematische_Verfahrensbeschreibung.tex
+OUTPUT target/chapters/2-Mathematische_Verfahrensbeschreibung.aux
+INPUT ./chapters/2-Mathematische_Verfahrensbeschreibung.tex
+INPUT ./chapters/2-Mathematische_Verfahrensbeschreibung.tex
+INPUT ./chapters/2-Mathematische_Verfahrensbeschreibung.tex
+INPUT chapters/2-Mathematische_Verfahrensbeschreibung.tex
+INPUT ./chapters/2-Mathematische_Verfahrensbeschreibung.tex
+INPUT chapters/2-Mathematische_Verfahrensbeschreibung.tex
+INPUT /usr/local/texlive/2022/texmf-dist/fonts/tfm/public/lm/ec-lmssbx10.tfm
+INPUT ./images/pythagoras.png
+INPUT ./images/pythagoras.png
+INPUT images/pythagoras.png
+INPUT ./images/pythagoras.png
+INPUT ./images/pythagoras.png
+INPUT ./chapters/3-Testdokumentation.tex
+INPUT ./chapters/3-Testdokumentation.tex
+INPUT ./chapters/3-Testdokumentation.tex
+OUTPUT target/chapters/3-Testdokumentation.aux
+INPUT ./chapters/3-Testdokumentation.tex
+INPUT ./chapters/3-Testdokumentation.tex
+INPUT ./chapters/3-Testdokumentation.tex
+INPUT chapters/3-Testdokumentation.tex
+INPUT ./chapters/3-Testdokumentation.tex
+INPUT chapters/3-Testdokumentation.tex
 INPUT /usr/local/texlive/2022/texmf-dist/tex/latex/lm/ts1lmr.fd
 INPUT /usr/local/texlive/2022/texmf-dist/tex/latex/lm/ts1lmr.fd
 INPUT /usr/local/texlive/2022/texmf-dist/tex/latex/lm/ts1lmr.fd
 INPUT /usr/local/texlive/2022/texmf-dist/tex/latex/lm/ts1lmr.fd
 INPUT /usr/local/texlive/2022/texmf-dist/fonts/tfm/public/lm/ts1-lmr12.tfm
-INPUT /usr/local/texlive/2022/texmf-dist/fonts/tfm/public/lm/ec-lmssbx10.tfm
-INPUT ./chapters/2-Verfahrensbeschreibung.tex
-INPUT ./chapters/2-Verfahrensbeschreibung.tex
-INPUT ./chapters/2-Verfahrensbeschreibung.tex
-OUTPUT target/chapters/2-Verfahrensbeschreibung.aux
-INPUT ./chapters/2-Verfahrensbeschreibung.tex
-INPUT ./chapters/2-Verfahrensbeschreibung.tex
-INPUT ./chapters/2-Verfahrensbeschreibung.tex
-INPUT chapters/2-Verfahrensbeschreibung.tex
-INPUT ./chapters/2-Verfahrensbeschreibung.tex
-INPUT chapters/2-Verfahrensbeschreibung.tex
-INPUT ./chapters/3-Programmbeschreibung.tex
-INPUT ./chapters/3-Programmbeschreibung.tex
-INPUT ./chapters/3-Programmbeschreibung.tex
-OUTPUT target/chapters/3-Programmbeschreibung.aux
-INPUT ./chapters/3-Programmbeschreibung.tex
-INPUT ./chapters/3-Programmbeschreibung.tex
-INPUT ./chapters/3-Programmbeschreibung.tex
-INPUT chapters/3-Programmbeschreibung.tex
-INPUT ./chapters/3-Programmbeschreibung.tex
-INPUT chapters/3-Programmbeschreibung.tex
-INPUT ./images//Benutzerdialog.png
-INPUT images//Benutzerdialog.png
-INPUT ./images//Benutzerdialog.png
-INPUT ./images//Benutzerdialog.png
-INPUT ./images//Einlesen_WBuch1.png
-INPUT images//Einlesen_WBuch1.png
-INPUT ./images//Einlesen_WBuch1.png
-INPUT ./images//Einlesen_WBuch1.png
-INPUT ./images//Explizitmodus.png
-INPUT images//Explizitmodus.png
-INPUT ./images//Explizitmodus.png
-INPUT ./images//Explizitmodus.png
-INPUT ./images//Wort_ermitteln.png
-INPUT images//Wort_ermitteln.png
-INPUT ./images//Wort_ermitteln.png
-INPUT ./images//Wort_ermitteln.png
-INPUT ./chapters/4-Testdokumentation.tex
-INPUT ./chapters/4-Testdokumentation.tex
-INPUT ./chapters/4-Testdokumentation.tex
-OUTPUT target/chapters/4-Testdokumentation.aux
-INPUT ./chapters/4-Testdokumentation.tex
-INPUT ./chapters/4-Testdokumentation.tex
-INPUT ./chapters/4-Testdokumentation.tex
-INPUT chapters/4-Testdokumentation.tex
-INPUT ./chapters/4-Testdokumentation.tex
-INPUT chapters/4-Testdokumentation.tex
-INPUT ./chapters/5-ZusammenfassungUndAusblick.tex
-INPUT ./chapters/5-ZusammenfassungUndAusblick.tex
-INPUT ./chapters/5-ZusammenfassungUndAusblick.tex
-OUTPUT target/chapters/5-ZusammenfassungUndAusblick.aux
-INPUT ./chapters/5-ZusammenfassungUndAusblick.tex
-INPUT ./chapters/5-ZusammenfassungUndAusblick.tex
-INPUT ./chapters/5-ZusammenfassungUndAusblick.tex
-INPUT chapters/5-ZusammenfassungUndAusblick.tex
-INPUT ./chapters/5-ZusammenfassungUndAusblick.tex
-INPUT chapters/5-ZusammenfassungUndAusblick.tex
 INPUT ./chapters/B-Benutzeranleitung.tex
 INPUT ./chapters/B-Benutzeranleitung.tex
 INPUT ./chapters/B-Benutzeranleitung.tex
@@ -1178,6 +1140,7 @@ INPUT ./chapters/B-Benutzeranleitung.tex
 INPUT chapters/B-Benutzeranleitung.tex
 INPUT ./chapters/B-Benutzeranleitung.tex
 INPUT chapters/B-Benutzeranleitung.tex
+INPUT /usr/local/texlive/2022/texmf-dist/fonts/tfm/public/lm/ec-lmri12.tfm
 INPUT ./chapters/C-Entwicklungsumgebung.tex
 INPUT ./chapters/C-Entwicklungsumgebung.tex
 INPUT ./chapters/C-Entwicklungsumgebung.tex
@@ -1235,6 +1198,40 @@ INPUT ./chapters/F-Aufgabenstellung.tex
 INPUT chapters/F-Aufgabenstellung.tex
 INPUT ./chapters/F-Aufgabenstellung.tex
 INPUT chapters/F-Aufgabenstellung.tex
+INPUT ./images/ABGABEUEBUNG 2023_23.pdf
+INPUT images/ABGABEUEBUNG 2023_23.pdf
+INPUT ./images/ABGABEUEBUNG 2023_23.pdf
+INPUT ./images/ABGABEUEBUNG 2023_23.pdf
+INPUT images/ABGABEUEBUNG 2023_23.pdf
+INPUT ./images/ABGABEUEBUNG 2023_23.pdf
+INPUT ./images/ABGABEUEBUNG 2023_23.pdf
+INPUT ./images/ABGABEUEBUNG 2023_23.pdf
+INPUT ./images/ABGABEUEBUNG 2023_23.pdf
+INPUT ./images/ABGABEUEBUNG 2023_23.pdf
+INPUT images/ABGABEUEBUNG 2023_23.pdf
+INPUT ./images/ABGABEUEBUNG 2023_23.pdf
+INPUT ./images/ABGABEUEBUNG 2023_23.pdf
+INPUT ./images/ABGABEUEBUNG 2023_23.pdf
+INPUT ./images/ABGABEUEBUNG 2023_23.pdf
+INPUT images/ABGABEUEBUNG 2023_23.pdf
+INPUT ./images/ABGABEUEBUNG 2023_23.pdf
+INPUT ./images/ABGABEUEBUNG 2023_23.pdf
+INPUT ./images/ABGABEUEBUNG 2023_23.pdf
+INPUT ./images/ABGABEUEBUNG 2023_23.pdf
+INPUT images/ABGABEUEBUNG 2023_23.pdf
+INPUT ./images/ABGABEUEBUNG 2023_23.pdf
+INPUT ./images/ABGABEUEBUNG 2023_23.pdf
+INPUT ./images/ABGABEUEBUNG 2023_23.pdf
+INPUT images/ABGABEUEBUNG 2023_23.pdf
+INPUT ./images/ABGABEUEBUNG 2023_23.pdf
+INPUT ./images/ABGABEUEBUNG 2023_23.pdf
+INPUT ./images/ABGABEUEBUNG 2023_23.pdf
+INPUT images/ABGABEUEBUNG 2023_23.pdf
+INPUT ./images/ABGABEUEBUNG 2023_23.pdf
+INPUT ./images/ABGABEUEBUNG 2023_23.pdf
+INPUT ./images/ABGABEUEBUNG 2023_23.pdf
+INPUT images/ABGABEUEBUNG 2023_23.pdf
+INPUT ./images/ABGABEUEBUNG 2023_23.pdf
 INPUT ./chapters/G-Quellcode.tex
 INPUT ./chapters/G-Quellcode.tex
 INPUT ./chapters/G-Quellcode.tex
@@ -1249,21 +1246,15 @@ INPUT target/dokumentation.aux
 INPUT target/title.aux
 INPUT target/title.aux
 INPUT target/title.aux
-INPUT target/chapters/1-Aufgabenanalyse.aux
-INPUT target/chapters/1-Aufgabenanalyse.aux
-INPUT target/chapters/1-Aufgabenanalyse.aux
-INPUT target/chapters/2-Verfahrensbeschreibung.aux
-INPUT target/chapters/2-Verfahrensbeschreibung.aux
-INPUT target/chapters/2-Verfahrensbeschreibung.aux
-INPUT target/chapters/3-Programmbeschreibung.aux
-INPUT target/chapters/3-Programmbeschreibung.aux
-INPUT target/chapters/3-Programmbeschreibung.aux
-INPUT target/chapters/4-Testdokumentation.aux
-INPUT target/chapters/4-Testdokumentation.aux
-INPUT target/chapters/4-Testdokumentation.aux
-INPUT target/chapters/5-ZusammenfassungUndAusblick.aux
-INPUT target/chapters/5-ZusammenfassungUndAusblick.aux
-INPUT target/chapters/5-ZusammenfassungUndAusblick.aux
+INPUT target/chapters/1-Programmentwurf.aux
+INPUT target/chapters/1-Programmentwurf.aux
+INPUT target/chapters/1-Programmentwurf.aux
+INPUT target/chapters/2-Mathematische_Verfahrensbeschreibung.aux
+INPUT target/chapters/2-Mathematische_Verfahrensbeschreibung.aux
+INPUT target/chapters/2-Mathematische_Verfahrensbeschreibung.aux
+INPUT target/chapters/3-Testdokumentation.aux
+INPUT target/chapters/3-Testdokumentation.aux
+INPUT target/chapters/3-Testdokumentation.aux
 INPUT target/chapters/B-Benutzeranleitung.aux
 INPUT target/chapters/B-Benutzeranleitung.aux
 INPUT target/chapters/B-Benutzeranleitung.aux
@@ -1286,8 +1277,12 @@ INPUT target/dokumentation.out
 INPUT target/dokumentation.out
 INPUT /usr/local/texlive/2022/texmf-dist/fonts/enc/dvips/lm/lm-ec.enc
 INPUT /usr/local/texlive/2022/texmf-dist/fonts/enc/dvips/lm/lm-ts1.enc
+INPUT /usr/local/texlive/2022/texmf-dist/fonts/enc/dvips/lm/lm-rm.enc
+INPUT /usr/local/texlive/2022/texmf-dist/fonts/enc/dvips/lm/lm-mathit.enc
 INPUT /usr/local/texlive/2022/texmf-dist/fonts/type1/public/lm/lmbx12.pfb
+INPUT /usr/local/texlive/2022/texmf-dist/fonts/type1/public/lm/lmmi12.pfb
 INPUT /usr/local/texlive/2022/texmf-dist/fonts/type1/public/lm/lmr12.pfb
+INPUT /usr/local/texlive/2022/texmf-dist/fonts/type1/public/lm/lmr8.pfb
 INPUT /usr/local/texlive/2022/texmf-dist/fonts/type1/public/lm/lmri12.pfb
 INPUT /usr/local/texlive/2022/texmf-dist/fonts/type1/public/lm/lmro12.pfb
 INPUT /usr/local/texlive/2022/texmf-dist/fonts/type1/public/lm/lmssbx10.pfb

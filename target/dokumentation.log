@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2022.11.21)  2 NOV 2023 15:05
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2022.11.21)  2 NOV 2023 15:42
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -579,7 +579,7 @@ File: t1lmr.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 File: l3backend-pdftex.def 2022-02-07 L3 backend support: PDF output (pdfTeX)
 \l__color_backend_stack_int=\count315
 \l__pdf_internal_box=\box63
-) (target/dokumentation.aux (target/title.aux) (target/chapters/1-Aufgabenanalyse.aux) (target/chapters/2-Verfahrensbeschreibung.aux) (target/chapters/3-Programmbeschreibung.aux) (target/chapters/4-Testdokumentation.aux) (target/chapters/5-ZusammenfassungUndAusblick.aux) (target/chapters/B-Benutzeranleitung.aux) (target/chapters/C-Entwicklungsumgebung.aux) (target/chapters/D-VerwendeteHilfsmittel.aux) (target/chapters/E-Erklaerung.aux) (target/chapters/F-Aufgabenstellung.aux) (target/chapters/G-Quellcode.aux))
+) (target/dokumentation.aux (target/title.aux) (target/chapters/1-Programmentwurf.aux) (target/chapters/2-Mathematische_Verfahrensbeschreibung.aux) (target/chapters/3-Testdokumentation.aux) (target/chapters/B-Benutzeranleitung.aux) (target/chapters/C-Entwicklungsumgebung.aux) (target/chapters/D-VerwendeteHilfsmittel.aux) (target/chapters/E-Erklaerung.aux) (target/chapters/F-Aufgabenstellung.aux) (target/chapters/G-Quellcode.aux))
 \openout1 = `dokumentation.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 21.
@@ -789,9 +789,9 @@ Package tocbasic Info: character protrusion at toc deactivated on input line 40.
 \openout4 = `dokumentation.toc'.
 
  [3]
-\openout2 = `chapters/1-Aufgabenanalyse.aux'.
+\openout2 = `chapters/1-Programmentwurf.aux'.
 
- (./chapters/1-Aufgabenanalyse.tex
+ (./chapters/1-Programmentwurf.tex
 chapter 1.
 
 Class scrreprt Warning: \float@addtolists detected!
@@ -808,78 +808,87 @@ Class scrreprt Warning: \float@addtolists detected!
 (scrreprt)              a package that still implements the
 (scrreprt)              deprecated \float@addtolist interface.
 
-[4
+
+./chapters/1-Programmentwurf.tex:14: LaTeX Error: File `Benutzerdialog' not found.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.14 ...extheight,keepaspectratio]{Benutzerdialog}
+                                                  
+I could not locate the file with any of these extensions:
+.pdf,.png,.jpg,.mps,.jpeg,.jbig2,.jb2,.PDF,.PNG,.JPG,.JPEG,.JBIG2,.JB2,.eps
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
 
 
-] [5]
-LaTeX Font Info:    Trying to load font information for TS1+lmr on input line 61.
- (/usr/local/texlive/2022/texmf-dist/tex/latex/lm/ts1lmr.fd
-File: ts1lmr.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
-) [6] [7] [8]) [9]
-\openout2 = `chapters/2-Verfahrensbeschreibung.aux'.
+./chapters/1-Programmentwurf.tex:14: Package graphics Error: Division by 0.
 
- (./chapters/2-Verfahrensbeschreibung.tex
-chapter 2.
-
-Underfull \hbox (badness 10000) in paragraph at lines 20--28
-
- []
-
-[10
+See the graphics package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.14 ...extheight,keepaspectratio]{Benutzerdialog}
+                                                  
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
 
 
+./chapters/1-Programmentwurf.tex:14: Package graphics Error: Division by 0.
+
+See the graphics package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.14 ...extheight,keepaspectratio]{Benutzerdialog}
+                                                  
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
 
 
-]
-Underfull \hbox (badness 10000) in paragraph at lines 29--40
+./chapters/1-Programmentwurf.tex:25: LaTeX Error: File `Einlesen_WBuch1' not found.
 
- []
-
-[11]) [12]
-\openout2 = `chapters/3-Programmbeschreibung.aux'.
-
- (./chapters/3-Programmbeschreibung.tex
-chapter 3.
-<images//Benutzerdialog.png, id=172, 491.58656pt x 896.59969pt>
-File: images//Benutzerdialog.png Graphic file (type png)
-<use images//Benutzerdialog.png>
-Package pdftex.def Info: images//Benutzerdialog.png  used on input line 14.
-(pdftex.def)             Requested size: 442.42381pt x 806.93227pt.
-
-LaTeX Warning: Float too large for page by 24.53679pt on input line 21.
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.25 ...xtheight,keepaspectratio]{Einlesen_WBuch1}
+                                                  
+I could not locate the file with any of these extensions:
+.pdf,.png,.jpg,.mps,.jpeg,.jbig2,.jb2,.PDF,.PNG,.JPG,.JPEG,.JBIG2,.JB2,.eps
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
 
 
-LaTeX Warning: `!h' float specifier changed to `!ht'.
+./chapters/1-Programmentwurf.tex:39: LaTeX Error: File `Explizitmodus' not found.
 
-<images//Einlesen_WBuch1.png, id=174, 474.27188pt x 684.30656pt>
-File: images//Einlesen_WBuch1.png Graphic file (type png)
-<use images//Einlesen_WBuch1.png>
-Package pdftex.def Info: images//Einlesen_WBuch1.png  used on input line 25.
-(pdftex.def)             Requested size: 410.32637pt x 592.04234pt.
-
-LaTeX Warning: Float too large for page by 24.54233pt on input line 35.
-
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-<images//Explizitmodus.png, id=175, 672.26157pt x 972.63374pt>
-File: images//Explizitmodus.png Graphic file (type png)
-<use images//Explizitmodus.png>
-Package pdftex.def Info: images//Explizitmodus.png  used on input line 39.
-(pdftex.def)             Requested size: 409.17625pt x 591.9997pt.
-
-LaTeX Warning: Float too large for page by 24.49968pt on input line 48.
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.39 ...textheight,keepaspectratio]{Explizitmodus}
+                                                  
+I could not locate the file with any of these extensions:
+.pdf,.png,.jpg,.mps,.jpeg,.jbig2,.jb2,.PDF,.PNG,.JPG,.JPEG,.JBIG2,.JB2,.eps
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
 
 
-LaTeX Warning: `!h' float specifier changed to `!ht'.
+./chapters/1-Programmentwurf.tex:52: LaTeX Error: File `Wort_ermitteln' not found.
 
-<images//Wort_ermitteln.png, id=176, 807.015pt x 900.36375pt>
-File: images//Wort_ermitteln.png Graphic file (type png)
-<use images//Wort_ermitteln.png>
-Package pdftex.def Info: images//Wort_ermitteln.png  used on input line 52.
-(pdftex.def)             Requested size: 418.25873pt x 466.6394pt.
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.52 ...extheight,keepaspectratio]{Wort_ermitteln}
+                                                  
+I could not locate the file with any of these extensions:
+.pdf,.png,.jpg,.mps,.jpeg,.jbig2,.jb2,.PDF,.PNG,.JPG,.JPEG,.JBIG2,.JB2,.eps
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
 
 
 Underfull \hbox (badness 3029) in paragraph at lines 103--103
@@ -889,77 +898,91 @@ Underfull \hbox (badness 3029) in paragraph at lines 103--103
 
 LaTeX Warning: Float too large for page by 26.99968pt on input line 105.
 
-) [13
+[4
+
+
+]) [5] [6]
+\openout2 = `chapters/2-Mathematische_Verfahrensbeschreibung.aux'.
+
+ (./chapters/2-Mathematische_Verfahrensbeschreibung.tex
+chapter 2.
+<images/pythagoras.png, id=102, 521.95pt x 564.1075pt>
+File: images/pythagoras.png Graphic file (type png)
+<use images/pythagoras.png>
+Package pdftex.def Info: images/pythagoras.png  used on input line 23.
+(pdftex.def)             Requested size: 209.12778pt x 226.01773pt.
+) [7
 
 
 
 
-] [14 <./images//Benutzerdialog.png>] [15 <./images//Einlesen_WBuch1.png>] [16 <./images//Explizitmodus.png>] [17 <./images//Wort_ermitteln.png>] [18]
-\openout2 = `chapters/4-Testdokumentation.aux'.
+] [8 <./images/pythagoras.png>]
+\openout2 = `chapters/3-Testdokumentation.aux'.
 
- (./chapters/4-Testdokumentation.tex
-chapter 4.
-[19
+ (./chapters/3-Testdokumentation.tex
+chapter 3.
+
+LaTeX Warning: Reference `subsec:sonderfaelle' on page 9 undefined on input line 12.
+
+LaTeX Font Info:    Trying to load font information for TS1+lmr on input line 27.
+(/usr/local/texlive/2022/texmf-dist/tex/latex/lm/ts1lmr.fd
+File: ts1lmr.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
+) [9
 
 
 
 
-] [20]
+] [10]
 
 Package caption Warning: The option `hypcap=true' will be ignored for this
 (caption)                particular \caption on input line 94.
 See the caption package documentation for explanation.
 
-[21] [22] [23]
+[11] [12] [13]
 
 Package caption Warning: The option `hypcap=true' will be ignored for this
 (caption)                particular \caption on input line 182.
 See the caption package documentation for explanation.
 
-[24] [25] [26] [27] [28] [29] [30] [31] [32] [33] [34] [35] [36] [37] [38] [39] [40] [41] [42] [43] [44] [45]
+
+LaTeX Warning: Reference `subsec:syntaktische-fehler' on page 14 undefined on input line 188.
+
+[14] [15] [16] [17] [18] [19] [20]
+
+LaTeX Warning: Reference `subsec:syntaktische-fehler' on page 21 undefined on input line 402.
+
+[21] [22] [23] [24] [25] [26] [27] [28] [29] [30] [31] [32] [33] [34] [35]
 
 Package caption Warning: The option `hypcap=true' will be ignored for this
 (caption)                particular \caption on input line 859.
 See the caption package documentation for explanation.
 
-[46]
+[36]
+
+LaTeX Warning: Reference `subsec:sonderfaelle' on page 37 undefined on input line 875.
+
 
 Package caption Warning: The option `hypcap=true' will be ignored for this
 (caption)                particular \caption on input line 903.
 See the caption package documentation for explanation.
 
-[47]
+[37]
 
 Package caption Warning: The option `hypcap=true' will be ignored for this
 (caption)                particular \caption on input line 936.
 See the caption package documentation for explanation.
 
-) [48]
-\openout2 = `chapters/5-ZusammenfassungUndAusblick.aux'.
-
- (./chapters/5-ZusammenfassungUndAusblick.tex
-chapter 5.
-
-Underfull \hbox (badness 10000) in paragraph at lines 5--7
-
- []
-
-[49
-
-
-
-
-]) [50]
+) [38]
 \openout2 = `chapters/B-Benutzeranleitung.aux'.
 
  (./chapters/B-Benutzeranleitung.tex
 chapter A.
-) [51
+) [39
 
 
 
 
-] [52]
+] [40]
 \openout2 = `chapters/C-Entwicklungsumgebung.aux'.
 
  (./chapters/C-Entwicklungsumgebung.tex
@@ -972,22 +995,22 @@ Package microtype Info: Loading generic protrusion settings for font family
 (microtype)             `lmtt' (encoding: T1).
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
-<images/opencobol-logo.png, id=1100, 192.72pt x 192.72pt>
+<images/opencobol-logo.png, id=998, 192.72pt x 192.72pt>
 File: images/opencobol-logo.png Graphic file (type png)
 <use images/opencobol-logo.png>
 Package pdftex.def Info: images/opencobol-logo.png  used on input line 16.
 (pdftex.def)             Requested size: 83.64983pt x 83.64725pt.
-<images/Gnu-COBOL.png, id=1101, 1027.84pt x 1004.75375pt>
+<images/Gnu-COBOL.png, id=999, 1027.84pt x 1004.75375pt>
 File: images/Gnu-COBOL.png Graphic file (type png)
 <use images/Gnu-COBOL.png>
 Package pdftex.def Info: images/Gnu-COBOL.png  used on input line 20.
 (pdftex.def)             Requested size: 83.64983pt x 81.76175pt.
-<images/GitHub-Logo.png, id=1102, 1027.84pt x 1027.84pt>
+<images/GitHub-Logo.png, id=1000, 1027.84pt x 1027.84pt>
 File: images/GitHub-Logo.png Graphic file (type png)
 <use images/GitHub-Logo.png>
 Package pdftex.def Info: images/GitHub-Logo.png  used on input line 28.
 (pdftex.def)             Requested size: 62.73578pt x 62.7342pt.
-) [53
+) [41
 
 
 
@@ -997,7 +1020,7 @@ Package pdftex.def Info: images/GitHub-Logo.png  used on input line 28.
 
  (./chapters/D-VerwendeteHilfsmittel.tex
 chapter C.
-) [54
+) [42
 
 
 
@@ -1008,68 +1031,92 @@ chapter C.
  (./chapters/E-Erklaerung.tex
 chapter D.
 
-Underfull \hbox (badness 10000) in paragraph at lines 7--12
+Underfull \hbox (badness 10000) in paragraph at lines 7--11
 
  []
 
 
-Overfull \hbox (11.6107pt too wide) in paragraph at lines 17--18
-[]\T1/lmr/m/n/12 (-20) automatische Tests: Test-Ex-pli-zi-tEin-ga-be.cmd, Test-Funk-tio-na-li-taet.cmd, TestRei-
+Underfull \hbox (badness 10000) in paragraph at lines 7--11
+
  []
 
 \widthbox=\skip77
-[55
+[43
 
 
 
 
-]
-Underfull \hbox (badness 10000) in paragraph at lines 41--46
-
- []
-
-[56]
-Underfull \hbox (badness 10000) in paragraph at lines 74--79
-
- []
-
-) [57]
+])
 \openout2 = `chapters/F-Aufgabenstellung.aux'.
 
  (./chapters/F-Aufgabenstellung.tex
 chapter E.
-) [58
+<images/ABGABEUEBUNG 2023_23.pdf, id=1028, 597.55246pt x 845.07718pt>
+File: images/ABGABEUEBUNG 2023_23.pdf Graphic file (type pdf)
+<use images/ABGABEUEBUNG 2023_23.pdf>
+Package pdftex.def Info: images/ABGABEUEBUNG 2023_23.pdf  used on input line 3.
+(pdftex.def)             Requested size: 597.551pt x 845.07512pt.
+File: images/ABGABEUEBUNG 2023_23.pdf Graphic file (type pdf)
+<use images/ABGABEUEBUNG 2023_23.pdf>
+Package pdftex.def Info: images/ABGABEUEBUNG 2023_23.pdf  used on input line 3.
+(pdftex.def)             Requested size: 597.551pt x 845.07512pt.
+<images/ABGABEUEBUNG 2023_23.pdf, id=1031, page=1, 597.55246pt x 845.07718pt>
+File: images/ABGABEUEBUNG 2023_23.pdf Graphic file (type pdf)
+<use images/ABGABEUEBUNG 2023_23.pdf, page 1>
+Package pdftex.def Info: images/ABGABEUEBUNG 2023_23.pdf , page1 used on input line 3.
+(pdftex.def)             Requested size: 597.551pt x 845.07512pt.
+File: images/ABGABEUEBUNG 2023_23.pdf Graphic file (type pdf)
+<use images/ABGABEUEBUNG 2023_23.pdf, page 1>
+Package pdftex.def Info: images/ABGABEUEBUNG 2023_23.pdf , page1 used on input line 3.
+(pdftex.def)             Requested size: 597.57834pt x 845.1138pt.
+[44
 
 
 
 
 ]
+File: images/ABGABEUEBUNG 2023_23.pdf Graphic file (type pdf)
+<use images/ABGABEUEBUNG 2023_23.pdf, page 1>
+Package pdftex.def Info: images/ABGABEUEBUNG 2023_23.pdf , page1 used on input line 3.
+(pdftex.def)             Requested size: 597.57834pt x 845.1138pt.
+File: images/ABGABEUEBUNG 2023_23.pdf Graphic file (type pdf)
+<use images/ABGABEUEBUNG 2023_23.pdf, page 1>
+Package pdftex.def Info: images/ABGABEUEBUNG 2023_23.pdf , page1 used on input line 3.
+(pdftex.def)             Requested size: 597.57834pt x 845.1138pt.
+File: images/ABGABEUEBUNG 2023_23.pdf Graphic file (type pdf)
+<use images/ABGABEUEBUNG 2023_23.pdf, page 1>
+Package pdftex.def Info: images/ABGABEUEBUNG 2023_23.pdf , page1 used on input line 3.
+(pdftex.def)             Requested size: 597.57834pt x 845.1138pt.
+ [45 <./images/ABGABEUEBUNG 2023_23.pdf>])
 \openout2 = `chapters/G-Quellcode.aux'.
 
  (./chapters/G-Quellcode.tex
 chapter F.
-) [59
+) [46
 
 
 
 
-] (target/dokumentation.aux (target/title.aux) (target/chapters/1-Aufgabenanalyse.aux) (target/chapters/2-Verfahrensbeschreibung.aux) (target/chapters/3-Programmbeschreibung.aux) (target/chapters/4-Testdokumentation.aux) (target/chapters/5-ZusammenfassungUndAusblick.aux) (target/chapters/B-Benutzeranleitung.aux) (target/chapters/C-Entwicklungsumgebung.aux) (target/chapters/D-VerwendeteHilfsmittel.aux) (target/chapters/E-Erklaerung.aux) (target/chapters/F-Aufgabenstellung.aux) (target/chapters/G-Quellcode.aux))
+] (target/dokumentation.aux (target/title.aux) (target/chapters/1-Programmentwurf.aux) (target/chapters/2-Mathematische_Verfahrensbeschreibung.aux) (target/chapters/3-Testdokumentation.aux) (target/chapters/B-Benutzeranleitung.aux) (target/chapters/C-Entwicklungsumgebung.aux) (target/chapters/D-VerwendeteHilfsmittel.aux) (target/chapters/E-Erklaerung.aux) (target/chapters/F-Aufgabenstellung.aux) (target/chapters/G-Quellcode.aux))
+
+LaTeX Warning: There were undefined references.
+
 Package rerunfilecheck Info: File `dokumentation.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
  ) 
 Here is how much of TeX's memory you used:
- 24557 strings out of 478268
- 461495 string characters out of 5846346
- 1114936 words of memory out of 5000000
- 41360 multiletter control sequences out of 15000+600000
- 526637 words of font info for 135 fonts, out of 8000000 for 9000
+ 24508 strings out of 478268
+ 460104 string characters out of 5846346
+ 1113253 words of memory out of 5000000
+ 41372 multiletter control sequences out of 15000+600000
+ 525158 words of font info for 120 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  108i,21n,106p,10660b,2060s stack positions out of 10000i,1000n,20000p,200000b,200000s
-{/usr/local/texlive/2022/texmf-dist/fonts/enc/dvips/lm/lm-ec.enc}{/usr/local/texlive/2022/texmf-dist/fonts/enc/dvips/lm/lm-ts1.enc}</usr/local/texlive/2022/texmf-dist/fonts/type1/public/lm/lmbx12.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/lm/lmr12.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/lm/lmri12.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/lm/lmro12.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/lm/lmssbx10.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/lm/lmtt12.pfb>
-Output written on target/dokumentation.pdf (59 pages, 578251 bytes).
+{/usr/local/texlive/2022/texmf-dist/fonts/enc/dvips/lm/lm-ec.enc}{/usr/local/texlive/2022/texmf-dist/fonts/enc/dvips/lm/lm-ts1.enc}{/usr/local/texlive/2022/texmf-dist/fonts/enc/dvips/lm/lm-rm.enc}{/usr/local/texlive/2022/texmf-dist/fonts/enc/dvips/lm/lm-mathit.enc}</usr/local/texlive/2022/texmf-dist/fonts/type1/public/lm/lmbx12.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/lm/lmmi12.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/lm/lmr12.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/lm/lmr8.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/lm/lmri12.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/lm/lmro12.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/lm/lmssbx10.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/lm/lmtt12.pfb>
+Output written on target/dokumentation.pdf (46 pages, 554714 bytes).
 PDF statistics:
- 1502 PDF objects out of 1728 (max. 8388607)
- 1399 compressed objects within 14 object streams
- 843 named destinations out of 1000 (max. 500000)
- 33665 words of extra memory for PDF output out of 35830 (max. 10000000)
+ 1379 PDF objects out of 1440 (max. 8388607)
+ 1277 compressed objects within 13 object streams
+ 812 named destinations out of 1000 (max. 500000)
+ 33534 words of extra memory for PDF output out of 35830 (max. 10000000)
 

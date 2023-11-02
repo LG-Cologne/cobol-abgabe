@@ -6,7 +6,7 @@
     DIV=10 % Division (Anzahl Spalten/Zeilen pro Seite, bestimmt implizit Margins)
 ]{scrreprt}
 
-\newcommand{\titleDocument}{COBOL}
+\newcommand{\titleDocument}{Abgabeübung COBOL Dreiecksberechnung}
 \newcommand{\authorDocument}{Leon Jarosch}
 \newcommand{\subjectDocument}{Abgabeübung}
 \newcommand{\locationDocument}{Köln}
@@ -40,16 +40,13 @@
     \tableofcontents
 
     % =========== Zahlenteil ===========
-    \include{chapters/1-Aufgabenanalyse}
-    \include{chapters/2-Verfahrensbeschreibung}
-    \include{chapters/3-Programmbeschreibung}
+    \include{chapters/1-Programmentwurf}
+    \include{chapters/2-Mathematische_Verfahrensbeschreibung}
+    \include{chapters/3-Testdokumentation}
     \addtocontents{toc}{\protect\newpage}
-    \include{chapters/4-Testdokumentation}
-    \include{chapters/5-ZusammenfassungUndAusblick}
     % ============= Buchstabenteil ==============
     \renewcommand{\thechapter}{\Alph{chapter}}%
     \setcounter{chapter}{0}
-%    \include{chapters/A-AbweichungUndErgaenzung}
     \include{chapters/B-Benutzeranleitung}
     \include{chapters/C-Entwicklungsumgebung}
     \include{chapters/D-VerwendeteHilfsmittel}
