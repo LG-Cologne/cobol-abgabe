@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2022.11.21)  2 NOV 2023 16:33
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2022.11.21)  2 NOV 2023 17:29
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -579,7 +579,7 @@ File: t1lmr.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 File: l3backend-pdftex.def 2022-02-07 L3 backend support: PDF output (pdfTeX)
 \l__color_backend_stack_int=\count315
 \l__pdf_internal_box=\box63
-) (target/dokumentation.aux (target/title.aux) (target/chapters/1-Programmentwurf.aux) (target/chapters/2-Mathematische_Verfahrensbeschreibung.aux) (target/chapters/3-Testdokumentation.aux) (target/chapters/B-Benutzeranleitung.aux) (target/chapters/C-Entwicklungsumgebung.aux) (target/chapters/D-VerwendeteHilfsmittel.aux) (target/chapters/E-Erklaerung.aux) (target/chapters/F-Aufgabenstellung.aux) (target/chapters/G-Quellcode.aux))
+) (target/dokumentation.aux (target/title.aux) (target/chapters/1-Programmentwurf.aux) (target/chapters/2-Mathematische_Verfahrensbeschreibung.aux) (target/chapters/3-Testdokumentation.aux) (target/chapters/D-VerwendeteHilfsmittel.aux) (target/chapters/E-Erklaerung.aux) (target/chapters/F-Aufgabenstellung.aux) (target/chapters/G-Quellcode.aux))
 \openout1 = `dokumentation.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 21.
@@ -836,87 +836,32 @@ LaTeX Warning: Float too large for page by 26.99968pt on input line 105.
 
  (./chapters/2-Mathematische_Verfahrensbeschreibung.tex
 chapter 2.
-<images/pythagoras.png, id=90, 521.95pt x 564.1075pt>
+[6
+
+
+
+
+]
+<images/pythagoras.png, id=77, 521.95pt x 564.1075pt>
 File: images/pythagoras.png Graphic file (type png)
 <use images/pythagoras.png>
-Package pdftex.def Info: images/pythagoras.png  used on input line 23.
+Package pdftex.def Info: images/pythagoras.png  used on input line 33.
 (pdftex.def)             Requested size: 209.12778pt x 226.01773pt.
-) [6
-
-
-
-
-] [7 <./images/pythagoras.png>]
+) [7 <./images/pythagoras.png>]
 \openout2 = `chapters/3-Testdokumentation.aux'.
 
  (./chapters/3-Testdokumentation.tex
 chapter 3.
-
-LaTeX Warning: Reference `subsec:sonderfaelle' on page 8 undefined on input line 12.
-
-LaTeX Font Info:    Trying to load font information for TS1+lmr on input line 27.
-(/usr/local/texlive/2022/texmf-dist/tex/latex/lm/ts1lmr.fd
-File: ts1lmr.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 ) [8
 
 
 
 
-] [9]
+]
+\openout2 = `chapters/D-VerwendeteHilfsmittel.aux'.
 
-Package caption Warning: The option `hypcap=true' will be ignored for this
-(caption)                particular \caption on input line 94.
-See the caption package documentation for explanation.
-
-[10] [11] [12]
-
-Package caption Warning: The option `hypcap=true' will be ignored for this
-(caption)                particular \caption on input line 182.
-See the caption package documentation for explanation.
-
-
-LaTeX Warning: Reference `subsec:syntaktische-fehler' on page 13 undefined on input line 188.
-
-[13] [14] [15] [16] [17] [18] [19]
-
-LaTeX Warning: Reference `subsec:syntaktische-fehler' on page 20 undefined on input line 402.
-
-[20] [21] [22] [23] [24] [25] [26] [27] [28] [29] [30] [31] [32] [33] [34]
-
-Package caption Warning: The option `hypcap=true' will be ignored for this
-(caption)                particular \caption on input line 859.
-See the caption package documentation for explanation.
-
-[35]
-
-LaTeX Warning: Reference `subsec:sonderfaelle' on page 36 undefined on input line 875.
-
-
-Package caption Warning: The option `hypcap=true' will be ignored for this
-(caption)                particular \caption on input line 903.
-See the caption package documentation for explanation.
-
-[36]
-
-Package caption Warning: The option `hypcap=true' will be ignored for this
-(caption)                particular \caption on input line 936.
-See the caption package documentation for explanation.
-
-) [37]
-\openout2 = `chapters/B-Benutzeranleitung.aux'.
-
- (./chapters/B-Benutzeranleitung.tex
+ (./chapters/D-VerwendeteHilfsmittel.tex
 chapter A.
-) [38
-
-
-
-
-] [39]
-\openout2 = `chapters/C-Entwicklungsumgebung.aux'.
-
- (./chapters/C-Entwicklungsumgebung.tex
-chapter B.
 LaTeX Font Info:    Trying to load font information for T1+lmtt on input line 3.
 (/usr/local/texlive/2022/texmf-dist/tex/latex/lm/t1lmtt.fd
 File: t1lmtt.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
@@ -925,32 +870,7 @@ Package microtype Info: Loading generic protrusion settings for font family
 (microtype)             `lmtt' (encoding: T1).
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
-<images/opencobol-logo.png, id=986, 192.72pt x 192.72pt>
-File: images/opencobol-logo.png Graphic file (type png)
-<use images/opencobol-logo.png>
-Package pdftex.def Info: images/opencobol-logo.png  used on input line 16.
-(pdftex.def)             Requested size: 83.64983pt x 83.64725pt.
-<images/Gnu-COBOL.png, id=987, 1027.84pt x 1004.75375pt>
-File: images/Gnu-COBOL.png Graphic file (type png)
-<use images/Gnu-COBOL.png>
-Package pdftex.def Info: images/Gnu-COBOL.png  used on input line 20.
-(pdftex.def)             Requested size: 83.64983pt x 81.76175pt.
-<images/GitHub-Logo.png, id=988, 1027.84pt x 1027.84pt>
-File: images/GitHub-Logo.png Graphic file (type png)
-<use images/GitHub-Logo.png>
-Package pdftex.def Info: images/GitHub-Logo.png  used on input line 28.
-(pdftex.def)             Requested size: 62.73578pt x 62.7342pt.
-) [40
-
-
-
-
- <./images/opencobol-logo.png> <./images/Gnu-COBOL.png> <./images/GitHub-Logo.png>]
-\openout2 = `chapters/D-VerwendeteHilfsmittel.aux'.
-
- (./chapters/D-VerwendeteHilfsmittel.tex
-chapter C.
-) [41
+) [9
 
 
 
@@ -959,7 +879,7 @@ chapter C.
 \openout2 = `chapters/E-Erklaerung.aux'.
 
  (./chapters/E-Erklaerung.tex
-chapter D.
+chapter B.
 
 Underfull \hbox (badness 10000) in paragraph at lines 7--11
 
@@ -971,7 +891,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 7--11
  []
 
 \widthbox=\skip77
-[42
+[10
 
 
 
@@ -980,8 +900,8 @@ Underfull \hbox (badness 10000) in paragraph at lines 7--11
 \openout2 = `chapters/F-Aufgabenstellung.aux'.
 
  (./chapters/F-Aufgabenstellung.tex
-chapter E.
-<images/ABGABEUEBUNG 2023_23.pdf, id=1015, 597.55246pt x 845.07718pt>
+chapter C.
+<images/ABGABEUEBUNG 2023_23.pdf, id=109, 597.55246pt x 845.07718pt>
 File: images/ABGABEUEBUNG 2023_23.pdf Graphic file (type pdf)
 <use images/ABGABEUEBUNG 2023_23.pdf>
 Package pdftex.def Info: images/ABGABEUEBUNG 2023_23.pdf  used on input line 3.
@@ -990,7 +910,7 @@ File: images/ABGABEUEBUNG 2023_23.pdf Graphic file (type pdf)
 <use images/ABGABEUEBUNG 2023_23.pdf>
 Package pdftex.def Info: images/ABGABEUEBUNG 2023_23.pdf  used on input line 3.
 (pdftex.def)             Requested size: 597.551pt x 845.07512pt.
-<images/ABGABEUEBUNG 2023_23.pdf, id=1018, page=1, 597.55246pt x 845.07718pt>
+<images/ABGABEUEBUNG 2023_23.pdf, id=112, page=1, 597.55246pt x 845.07718pt>
 File: images/ABGABEUEBUNG 2023_23.pdf Graphic file (type pdf)
 <use images/ABGABEUEBUNG 2023_23.pdf, page 1>
 Package pdftex.def Info: images/ABGABEUEBUNG 2023_23.pdf , page1 used on input line 3.
@@ -999,7 +919,7 @@ File: images/ABGABEUEBUNG 2023_23.pdf Graphic file (type pdf)
 <use images/ABGABEUEBUNG 2023_23.pdf, page 1>
 Package pdftex.def Info: images/ABGABEUEBUNG 2023_23.pdf , page1 used on input line 3.
 (pdftex.def)             Requested size: 597.57834pt x 845.1138pt.
-[43
+[11
 
 
 
@@ -1017,17 +937,17 @@ File: images/ABGABEUEBUNG 2023_23.pdf Graphic file (type pdf)
 <use images/ABGABEUEBUNG 2023_23.pdf, page 1>
 Package pdftex.def Info: images/ABGABEUEBUNG 2023_23.pdf , page1 used on input line 3.
 (pdftex.def)             Requested size: 597.57834pt x 845.1138pt.
- [44 <./images/ABGABEUEBUNG 2023_23.pdf>])
+ [12 <./images/ABGABEUEBUNG 2023_23.pdf>])
 \openout2 = `chapters/G-Quellcode.aux'.
 
  (./chapters/G-Quellcode.tex
-chapter F.
-) [45
+chapter D.
+) [13
 
 
 
 
-] (target/dokumentation.aux (target/title.aux) (target/chapters/1-Programmentwurf.aux) (target/chapters/2-Mathematische_Verfahrensbeschreibung.aux) (target/chapters/3-Testdokumentation.aux) (target/chapters/B-Benutzeranleitung.aux) (target/chapters/C-Entwicklungsumgebung.aux) (target/chapters/D-VerwendeteHilfsmittel.aux) (target/chapters/E-Erklaerung.aux) (target/chapters/F-Aufgabenstellung.aux) (target/chapters/G-Quellcode.aux))
+] (target/dokumentation.aux (target/title.aux) (target/chapters/1-Programmentwurf.aux) (target/chapters/2-Mathematische_Verfahrensbeschreibung.aux) (target/chapters/3-Testdokumentation.aux) (target/chapters/D-VerwendeteHilfsmittel.aux) (target/chapters/E-Erklaerung.aux) (target/chapters/F-Aufgabenstellung.aux) (target/chapters/G-Quellcode.aux))
 
 LaTeX Warning: There were undefined references.
 
@@ -1035,18 +955,18 @@ Package rerunfilecheck Info: File `dokumentation.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
  ) 
 Here is how much of TeX's memory you used:
- 24377 strings out of 478268
- 457143 string characters out of 5846346
- 1112963 words of memory out of 5000000
- 41252 multiletter control sequences out of 15000+600000
- 525437 words of font info for 123 fonts, out of 8000000 for 9000
+ 23117 strings out of 478268
+ 438999 string characters out of 5846346
+ 932771 words of memory out of 5000000
+ 40819 multiletter control sequences out of 15000+600000
+ 523471 words of font info for 105 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 108i,21n,106p,10660b,2060s stack positions out of 10000i,1000n,20000p,200000b,200000s
-{/usr/local/texlive/2022/texmf-dist/fonts/enc/dvips/lm/lm-ec.enc}{/usr/local/texlive/2022/texmf-dist/fonts/enc/dvips/lm/lm-ts1.enc}{/usr/local/texlive/2022/texmf-dist/fonts/enc/dvips/lm/lm-rm.enc}{/usr/local/texlive/2022/texmf-dist/fonts/enc/dvips/lm/lm-mathit.enc}</usr/local/texlive/2022/texmf-dist/fonts/type1/public/lm/lmbx12.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/lm/lmmi12.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/lm/lmr12.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/lm/lmr8.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/lm/lmri12.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/lm/lmro12.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/lm/lmssbx10.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/lm/lmtt12.pfb>
-Output written on target/dokumentation.pdf (45 pages, 553844 bytes).
+ 108i,20n,106p,10660b,760s stack positions out of 10000i,1000n,20000p,200000b,200000s
+{/usr/local/texlive/2022/texmf-dist/fonts/enc/dvips/lm/lm-ec.enc}{/usr/local/texlive/2022/texmf-dist/fonts/enc/dvips/lm/lm-rm.enc}{/usr/local/texlive/2022/texmf-dist/fonts/enc/dvips/lm/lm-mathsy.enc}{/usr/local/texlive/2022/texmf-dist/fonts/enc/dvips/lm/lm-mathex.enc}{/usr/local/texlive/2022/texmf-dist/fonts/enc/dvips/lm/lm-mathit.enc}</usr/local/texlive/2022/texmf-dist/fonts/type1/public/lm/lmbx12.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/lm/lmex10.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/lm/lmmi12.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/lm/lmr12.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/lm/lmr8.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/lm/lmri12.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/lm/lmro12.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/lm/lmssbx10.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/lm/lmsy10.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/lm/lmtt12.pfb>
+Output written on target/dokumentation.pdf (13 pages, 351064 bytes).
 PDF statistics:
- 1366 PDF objects out of 1440 (max. 8388607)
- 1265 compressed objects within 13 object streams
- 807 named destinations out of 1000 (max. 500000)
- 33534 words of extra memory for PDF output out of 35830 (max. 10000000)
+ 272 PDF objects out of 1000 (max. 8388607)
+ 216 compressed objects within 3 object streams
+ 36 named destinations out of 1000 (max. 500000)
+ 31375 words of extra memory for PDF output out of 35830 (max. 10000000)
 
