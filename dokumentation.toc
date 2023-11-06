@@ -1,15 +1,12 @@
 \babel@toc {ngerman}{}\relax 
-\contentsline {chapter}{\numberline {1}Programmbeschreibung}{4}{chapter.2}%
-\contentsline {chapter}{\numberline {2}Verfahrensbeschreibung}{7}{chapter.10}%
-\contentsline {section}{\numberline {2.1}Mathematischer Hintergrund}{7}{section.11}%
-\contentsline {subsection}{\numberline {2.1.1}Formel von Heron}{7}{subsection.12}%
-\contentsline {subsection}{\numberline {2.1.2}Satz des Pythagoras}{7}{subsection.16}%
-\contentsline {chapter}{\numberline {3}Testdokumentation}{9}{chapter.20}%
-\contentsline {section}{\numberline {3.1}Vordefinierte Tests}{9}{section.21}%
-\contentsline {section}{\numberline {3.2}Ergänzende Tests}{9}{section.22}%
-\contentsline {chapter}{\numberline {A}Verwendete Hilfsmittel}{10}{chapter.23}%
+\contentsline {chapter}{\numberline {1}Programmbeschreibung}{3}{chapter.2}%
+\contentsline {chapter}{\numberline {2}Verfahrensbeschreibung}{9}{chapter.10}%
+\contentsline {section}{\numberline {2.1}Mathematischer Hintergrund}{9}{section.11}%
+\contentsline {subsection}{\numberline {2.1.1}Formel von Heron}{9}{subsection.12}%
+\contentsline {subsection}{\numberline {2.1.2}Satz des Pythagoras}{10}{subsection.16}%
+\contentsline {chapter}{\numberline {3}Testdokumentation}{11}{chapter.20}%
+\contentsline {section}{\numberline {3.1}Vordefinierte Tests}{11}{section.21}%
+\contentsline {section}{\numberline {3.2}Ergänzende Tests}{11}{section.25}%
+\contentsline {chapter}{\numberline {A}Aufgabenstellung}{16}{chapter.30}%
 \newpage 
-\contentsline {chapter}{\numberline {B}Erklärung}{11}{chapter.24}%
-\contentsline {chapter}{\numberline {C}Aufgabenstellung}{12}{chapter.25}%
-\contentsline {chapter}{\numberline {D}Quellcode}{14}{chapter.26}%
 \providecommand \tocbasic@end@toc@file {}\tocbasic@end@toc@file 

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2023.7.14)  3 NOV 2023 18:28
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2023.7.14)  6 NOV 2023 12:36
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -598,7 +598,7 @@ File: t1lmr.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 File: l3backend-pdftex.def 2023-04-19 L3 backend support: PDF output (pdfTeX)
 \l__color_backend_stack_int=\count316
 \l__pdf_internal_box=\box64
-) (./dokumentation.aux (./title.aux) (./chapters/1-Programmentwurf.aux) (./chapters/2-Mathematische_Verfahrensbeschreibung.aux) (./chapters/3-Testdokumentation.aux) (./chapters/D-VerwendeteHilfsmittel.aux) (./chapters/E-Erklaerung.aux) (./chapters/F-Aufgabenstellung.aux) (./chapters/G-Quellcode.aux))
+) (./dokumentation.aux (./title.aux) (./chapters/1-Programmentwurf.aux) (./chapters/2-Mathematische_Verfahrensbeschreibung.aux) (./chapters/3-Testdokumentation.aux) (./chapters/F-Aufgabenstellung.aux))
 \openout1 = `dokumentation.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 21.
@@ -798,7 +798,6 @@ Package tocbasic Info: character protrusion at toc deactivated on input line 40.
 \tf@toc=\write4
 \openout4 = `dokumentation.toc'.
 
- [3]
 \openout2 = `chapters/1-Programmentwurf.aux'.
 
  (./chapters/1-Programmentwurf.tex
@@ -818,114 +817,110 @@ Class scrreprt Warning: \float@addtolists detected!
 (scrreprt)              a package that still implements the
 (scrreprt)              deprecated \float@addtolist interface.
 
-<images/Programmablauf.jpg, id=52, 516.93124pt x 385.44pt>
+<images/Programmablauf.jpg, id=41, 516.93124pt x 385.44pt>
 File: images/Programmablauf.jpg Graphic file (type jpg)
 <use images/Programmablauf.jpg>
 Package pdftex.def Info: images/Programmablauf.jpg  used on input line 6.
-(pdftex.def)             Requested size: 209.12778pt x 155.93178pt.
-<images/DETERMINE RECTANGULARITY.jpg, id=53, 1754.555pt x 337.26pt>
+(pdftex.def)             Requested size: 418.25555pt x 311.87534pt.
+<images/DETERMINE RECTANGULARITY.jpg, id=42, 1754.555pt x 337.26pt>
 File: images/DETERMINE RECTANGULARITY.jpg Graphic file (type jpg)
 <use images/DETERMINE RECTANGULARITY.jpg>
 Package pdftex.def Info: images/DETERMINE RECTANGULARITY.jpg  used on input line 14.
-(pdftex.def)             Requested size: 209.12778pt x 40.1967pt.
-<images/DETERMINE-TRIANGLE-TYPE.jpg, id=54, 500.87125pt x 224.84pt>
+(pdftex.def)             Requested size: 418.25555pt x 80.3934pt.
+<images/DETERMINE-TRIANGLE-TYPE.jpg, id=43, 500.87125pt x 224.84pt>
 File: images/DETERMINE-TRIANGLE-TYPE.jpg Graphic file (type jpg)
 <use images/DETERMINE-TRIANGLE-TYPE.jpg>
 Package pdftex.def Info: images/DETERMINE-TRIANGLE-TYPE.jpg  used on input line 20.
-(pdftex.def)             Requested size: 209.12778pt x 93.87636pt.
-<images/CALC-PERIMITER.jpg, id=55, 179.67125pt x 112.42pt>
+(pdftex.def)             Requested size: 418.25555pt x 187.76303pt.
+<images/CALC-PERIMITER.jpg, id=44, 179.67125pt x 112.42pt>
 File: images/CALC-PERIMITER.jpg Graphic file (type jpg)
 <use images/CALC-PERIMITER.jpg>
 Package pdftex.def Info: images/CALC-PERIMITER.jpg  used on input line 26.
-(pdftex.def)             Requested size: 209.12778pt x 130.86015pt.
+(pdftex.def)             Requested size: 418.25555pt x 261.72202pt.
 File: images/CALC-PERIMITER.jpg Graphic file (type jpg)
 <use images/CALC-PERIMITER.jpg>
 Package pdftex.def Info: images/CALC-PERIMITER.jpg  used on input line 32.
-(pdftex.def)             Requested size: 209.12778pt x 130.86015pt.
-<images/Prepare Output.jpg, id=56, 426.59375pt x 329.23pt>
+(pdftex.def)             Requested size: 418.25555pt x 261.72202pt.
+<images/Prepare Output.jpg, id=45, 426.59375pt x 329.23pt>
 File: images/Prepare Output.jpg Graphic file (type jpg)
 <use images/Prepare Output.jpg>
 Package pdftex.def Info: images/Prepare Output.jpg  used on input line 38.
-(pdftex.def)             Requested size: 209.12778pt x 161.39946pt.
-<images/display_output.jpg, id=57, 239.89626pt x 148.555pt>
+(pdftex.def)             Requested size: 418.25555pt x 322.814pt.
+<images/display_output.jpg, id=46, 239.89626pt x 148.555pt>
 File: images/display_output.jpg Graphic file (type jpg)
 <use images/display_output.jpg>
 Package pdftex.def Info: images/display_output.jpg  used on input line 44.
-(pdftex.def)             Requested size: 209.12778pt x 129.50247pt.
-) [4
+(pdftex.def)             Requested size: 418.25555pt x 259.02534pt.
+) [3
 
 
-] [5 <./images/Programmablauf.jpg> <./images/DETERMINE RECTANGULARITY.jpg> <./images/DETERMINE-TRIANGLE-TYPE.jpg> <./images/CALC-PERIMITER.jpg>] [6 <./images/Prepare Output.jpg> <./images/display_output.jpg>]
+] [4 <./images/Programmablauf.jpg> <./images/DETERMINE RECTANGULARITY.jpg>] [5 <./images/DETERMINE-TRIANGLE-TYPE.jpg> <./images/CALC-PERIMITER.jpg>] [6] [7 <./images/Prepare Output.jpg>] [8 <./images/display_output.jpg>]
 \openout2 = `chapters/2-Mathematische_Verfahrensbeschreibung.aux'.
 
  (./chapters/2-Mathematische_Verfahrensbeschreibung.tex
 chapter 2.
-[7
+[9
 
 
 
 
 {c:/texlive/2023/texmf-dist/fonts/enc/dvips/lm/lm-mathit.enc}{c:/texlive/2023/texmf-dist/fonts/enc/dvips/lm/lm-rm.enc}{c:/texlive/2023/texmf-dist/fonts/enc/dvips/lm/lm-mathex.enc}{c:/texlive/2023/texmf-dist/fonts/enc/dvips/lm/lm-mathsy.enc}]
-<images/pythagoras.png, id=89, 521.95pt x 564.1075pt>
+<images/pythagoras.png, id=91, 521.95pt x 564.1075pt>
 File: images/pythagoras.png Graphic file (type png)
 <use images/pythagoras.png>
-Package pdftex.def Info: images/pythagoras.png  used on input line 33.
+Package pdftex.def Info: images/pythagoras.png  used on input line 30.
 (pdftex.def)             Requested size: 209.12778pt x 226.01773pt.
-) [8 <./images/pythagoras.png>]
+) [10 <./images/pythagoras.png>]
 \openout2 = `chapters/3-Testdokumentation.aux'.
 
  (./chapters/3-Testdokumentation.tex
 chapter 3.
-) [9
+<images/Testfall1.png, id=102, 1053.33525pt x 560.0925pt>
+File: images/Testfall1.png Graphic file (type png)
+<use images/Testfall1.png>
+Package pdftex.def Info: images/Testfall1.png  used on input line 25.
+(pdftex.def)             Requested size: 418.25555pt x 222.40068pt.
+<images/Testfall2.png, id=103, 1053.33525pt x 560.0925pt>
+File: images/Testfall2.png Graphic file (type png)
+<use images/Testfall2.png>
+Package pdftex.def Info: images/Testfall2.png  used on input line 31.
+(pdftex.def)             Requested size: 418.25555pt x 222.40068pt.
+<images/Testfall3.png, id=104, 1053.33525pt x 560.0925pt>
+File: images/Testfall3.png Graphic file (type png)
+<use images/Testfall3.png>
+Package pdftex.def Info: images/Testfall3.png  used on input line 37.
+(pdftex.def)             Requested size: 418.25555pt x 222.40068pt.
+<images/Testfall4.png, id=105, 843.75224pt x 448.074pt>
+File: images/Testfall4.png Graphic file (type png)
+<use images/Testfall4.png>
+Package pdftex.def Info: images/Testfall4.png  used on input line 45.
+(pdftex.def)             Requested size: 418.25555pt x 222.10838pt.
+<images/Testfall5.png, id=106, 843.75224pt x 448.074pt>
+File: images/Testfall5.png Graphic file (type png)
+<use images/Testfall5.png>
+Package pdftex.def Info: images/Testfall5.png  used on input line 51.
+(pdftex.def)             Requested size: 418.25555pt x 222.10838pt.
+<images/Testfall6.png, id=107, 1053.33525pt x 560.0925pt>
+File: images/Testfall6.png Graphic file (type png)
+<use images/Testfall6.png>
+Package pdftex.def Info: images/Testfall6.png  used on input line 57.
+(pdftex.def)             Requested size: 418.25555pt x 222.40068pt.
+<images/Testfall7.png, id=108, 1053.33525pt x 560.0925pt>
+File: images/Testfall7.png Graphic file (type png)
+<use images/Testfall7.png>
+Package pdftex.def Info: images/Testfall7.png  used on input line 63.
+(pdftex.def)             Requested size: 418.25555pt x 222.40068pt.
+) [11
 
 
 
 
-]
-\openout2 = `chapters/D-VerwendeteHilfsmittel.aux'.
-
- (./chapters/D-VerwendeteHilfsmittel.tex
-chapter A.
-LaTeX Font Info:    Trying to load font information for T1+lmtt on input line 3.
-(c:/texlive/2023/texmf-dist/tex/latex/lm/t1lmtt.fd
-File: t1lmtt.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
-)
-Package microtype Info: Loading generic protrusion settings for font family
-(microtype)             `lmtt' (encoding: T1).
-(microtype)             For optimal results, create family-specific settings.
-(microtype)             See the microtype manual for details.
-) [10
-
-
-
-
-]
-\openout2 = `chapters/E-Erklaerung.aux'.
-
- (./chapters/E-Erklaerung.tex
-chapter B.
-
-Underfull \hbox (badness 10000) in paragraph at lines 7--11
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 7--11
-
- []
-
-\widthbox=\skip78
-[11
-
-
-
-
-])
+] [12 <./images/Testfall1.png> <./images/Testfall2.png>] [13 <./images/Testfall3.png> <./images/Testfall4.png>] [14 <./images/Testfall5.png> <./images/Testfall6.png>] [15 <./images/Testfall7.png>]
 \openout2 = `chapters/F-Aufgabenstellung.aux'.
 
  (./chapters/F-Aufgabenstellung.tex
-chapter C.
-<images/ABGABEUEBUNG 2023_23.pdf, id=120, 597.55246pt x 845.07718pt>
+chapter A.
+<images/ABGABEUEBUNG 2023_23.pdf, id=137, 597.55246pt x 845.07718pt>
 File: images/ABGABEUEBUNG 2023_23.pdf Graphic file (type pdf)
 <use images/ABGABEUEBUNG 2023_23.pdf>
 Package pdftex.def Info: images/ABGABEUEBUNG 2023_23.pdf  used on input line 3.
@@ -934,7 +929,7 @@ File: images/ABGABEUEBUNG 2023_23.pdf Graphic file (type pdf)
 <use images/ABGABEUEBUNG 2023_23.pdf>
 Package pdftex.def Info: images/ABGABEUEBUNG 2023_23.pdf  used on input line 3.
 (pdftex.def)             Requested size: 597.551pt x 845.07512pt.
-<images/ABGABEUEBUNG 2023_23.pdf, id=123, page=1, 597.55246pt x 845.07718pt>
+<images/ABGABEUEBUNG 2023_23.pdf, id=140, page=1, 597.55246pt x 845.07718pt>
 File: images/ABGABEUEBUNG 2023_23.pdf Graphic file (type pdf)
 <use images/ABGABEUEBUNG 2023_23.pdf, page 1>
 Package pdftex.def Info: images/ABGABEUEBUNG 2023_23.pdf , page1 used on input line 3.
@@ -943,7 +938,7 @@ File: images/ABGABEUEBUNG 2023_23.pdf Graphic file (type pdf)
 <use images/ABGABEUEBUNG 2023_23.pdf, page 1>
 Package pdftex.def Info: images/ABGABEUEBUNG 2023_23.pdf , page1 used on input line 3.
 (pdftex.def)             Requested size: 597.57834pt x 845.1138pt.
-[12
+[16
 
 
 
@@ -961,17 +956,7 @@ File: images/ABGABEUEBUNG 2023_23.pdf Graphic file (type pdf)
 <use images/ABGABEUEBUNG 2023_23.pdf, page 1>
 Package pdftex.def Info: images/ABGABEUEBUNG 2023_23.pdf , page1 used on input line 3.
 (pdftex.def)             Requested size: 597.57834pt x 845.1138pt.
- [13 <./images/ABGABEUEBUNG 2023_23.pdf>])
-\openout2 = `chapters/G-Quellcode.aux'.
-
- (./chapters/G-Quellcode.tex
-chapter D.
-) [14
-
-
-
-
-] (./dokumentation.aux (./title.aux) (./chapters/1-Programmentwurf.aux) (./chapters/2-Mathematische_Verfahrensbeschreibung.aux) (./chapters/3-Testdokumentation.aux) (./chapters/D-VerwendeteHilfsmittel.aux) (./chapters/E-Erklaerung.aux) (./chapters/F-Aufgabenstellung.aux) (./chapters/G-Quellcode.aux))
+ [17 <./images/ABGABEUEBUNG 2023_23.pdf>]) (./dokumentation.aux (./title.aux) (./chapters/1-Programmentwurf.aux) (./chapters/2-Mathematische_Verfahrensbeschreibung.aux) (./chapters/3-Testdokumentation.aux) (./chapters/F-Aufgabenstellung.aux))
  ***********
 LaTeX2e <2023-06-01> patch level 1
 L3 programming layer <2023-06-30>
@@ -980,18 +965,18 @@ Package rerunfilecheck Info: File `dokumentation.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
  ) 
 Here is how much of TeX's memory you used:
- 23443 strings out of 475236
- 439517 string characters out of 5768534
- 1930238 words of memory out of 5000000
- 44211 multiletter control sequences out of 15000+600000
- 611274 words of font info for 102 fonts, out of 8000000 for 9000
+ 23354 strings out of 475236
+ 436974 string characters out of 5768534
+ 1926238 words of memory out of 5000000
+ 44151 multiletter control sequences out of 15000+600000
+ 606163 words of font info for 95 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  108i,20n,107p,10942b,769s stack positions out of 10000i,1000n,20000p,200000b,200000s
-<c:/texlive/2023/texmf-dist/fonts/type1/public/lm/lmbx12.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/lm/lmex10.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/lm/lmmi12.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/lm/lmr12.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/lm/lmr8.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/lm/lmri12.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/lm/lmro12.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/lm/lmssbx10.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/lm/lmsy10.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/lm/lmtt12.pfb>
-Output written on dokumentation.pdf (14 pages, 578963 bytes).
+<c:/texlive/2023/texmf-dist/fonts/type1/public/lm/lmbx12.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/lm/lmex10.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/lm/lmmi12.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/lm/lmr12.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/lm/lmr8.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/lm/lmro12.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/lm/lmssbx10.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/lm/lmsy10.pfb>
+Output written on dokumentation.pdf (17 pages, 964019 bytes).
 PDF statistics:
- 280 PDF objects out of 1000 (max. 8388607)
- 217 compressed objects within 3 object streams
- 41 named destinations out of 1000 (max. 500000)
- 31389 words of extra memory for PDF output out of 35830 (max. 10000000)
+ 276 PDF objects out of 1000 (max. 8388607)
+ 207 compressed objects within 3 object streams
+ 48 named destinations out of 1000 (max. 500000)
+ 28840 words of extra memory for PDF output out of 29859 (max. 10000000)
 
