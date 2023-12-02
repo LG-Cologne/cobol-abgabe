@@ -1105,7 +1105,6 @@ INPUT chapters/1-Aufgabenanalyse.tex
 INPUT ./chapters/1-Aufgabenanalyse.tex
 INPUT chapters/1-Aufgabenanalyse.tex
 INPUT /usr/local/texlive/2022/texmf-dist/fonts/tfm/public/lm/ec-lmssbx10.tfm
-INPUT /usr/local/texlive/2022/texmf-dist/fonts/tfm/public/lm/ec-lmri12.tfm
 INPUT /usr/local/texlive/2022/texmf-dist/tex/latex/lm/ts1lmr.fd
 INPUT /usr/local/texlive/2022/texmf-dist/tex/latex/lm/ts1lmr.fd
 INPUT /usr/local/texlive/2022/texmf-dist/tex/latex/lm/ts1lmr.fd
@@ -1122,6 +1121,7 @@ INPUT ./chapters/2-Verfahrensbeschreibung.tex
 INPUT chapters/2-Verfahrensbeschreibung.tex
 INPUT ./chapters/2-Verfahrensbeschreibung.tex
 INPUT chapters/2-Verfahrensbeschreibung.tex
+INPUT /usr/local/texlive/2022/texmf-dist/fonts/tfm/public/lm/ec-lmri12.tfm
 INPUT ./chapters/3-Programmbeschreibung.tex
 INPUT ./chapters/3-Programmbeschreibung.tex
 INPUT ./chapters/3-Programmbeschreibung.tex

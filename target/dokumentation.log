@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2022.11.21)  2 NOV 2023 15:05
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2022.11.21)  2 DEC 2023 17:29
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -808,14 +808,32 @@ Class scrreprt Warning: \float@addtolists detected!
 (scrreprt)              a package that still implements the
 (scrreprt)              deprecated \float@addtolist interface.
 
+
+Underfull \hbox (badness 10000) in paragraph at lines 21--22
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 23--24
+
+ []
+
 [4
 
 
 ] [5]
-LaTeX Font Info:    Trying to load font information for TS1+lmr on input line 61.
+LaTeX Font Info:    Trying to load font information for TS1+lmr on input line 59.
  (/usr/local/texlive/2022/texmf-dist/tex/latex/lm/ts1lmr.fd
 File: ts1lmr.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
-) [6] [7] [8]) [9]
+) [6] [7]
+
+LaTeX Warning: Hyper reference `tab:tastatur-aufbau' on page 8 undefined on input line 130.
+
+[8]
+
+LaTeX Warning: Hyper reference `tab:tastatur-aufbau' on page 9 undefined on input line 153.
+
+) [9]
 \openout2 = `chapters/2-Verfahrensbeschreibung.aux'.
 
  (./chapters/2-Verfahrensbeschreibung.tex
@@ -840,7 +858,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 29--40
 
  (./chapters/3-Programmbeschreibung.tex
 chapter 3.
-<images//Benutzerdialog.png, id=172, 491.58656pt x 896.59969pt>
+<images//Benutzerdialog.png, id=168, 491.58656pt x 896.59969pt>
 File: images//Benutzerdialog.png Graphic file (type png)
 <use images//Benutzerdialog.png>
 Package pdftex.def Info: images//Benutzerdialog.png  used on input line 14.
@@ -851,7 +869,7 @@ LaTeX Warning: Float too large for page by 24.53679pt on input line 21.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<images//Einlesen_WBuch1.png, id=174, 474.27188pt x 684.30656pt>
+<images//Einlesen_WBuch1.png, id=170, 474.27188pt x 684.30656pt>
 File: images//Einlesen_WBuch1.png Graphic file (type png)
 <use images//Einlesen_WBuch1.png>
 Package pdftex.def Info: images//Einlesen_WBuch1.png  used on input line 25.
@@ -862,7 +880,7 @@ LaTeX Warning: Float too large for page by 24.54233pt on input line 35.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<images//Explizitmodus.png, id=175, 672.26157pt x 972.63374pt>
+<images//Explizitmodus.png, id=171, 672.26157pt x 972.63374pt>
 File: images//Explizitmodus.png Graphic file (type png)
 <use images//Explizitmodus.png>
 Package pdftex.def Info: images//Explizitmodus.png  used on input line 39.
@@ -873,7 +891,7 @@ LaTeX Warning: Float too large for page by 24.49968pt on input line 48.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<images//Wort_ermitteln.png, id=176, 807.015pt x 900.36375pt>
+<images//Wort_ermitteln.png, id=172, 807.015pt x 900.36375pt>
 File: images//Wort_ermitteln.png Graphic file (type png)
 <use images//Wort_ermitteln.png>
 Package pdftex.def Info: images//Wort_ermitteln.png  used on input line 52.
@@ -972,17 +990,17 @@ Package microtype Info: Loading generic protrusion settings for font family
 (microtype)             `lmtt' (encoding: T1).
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
-<images/opencobol-logo.png, id=1100, 192.72pt x 192.72pt>
+<images/opencobol-logo.png, id=1095, 192.72pt x 192.72pt>
 File: images/opencobol-logo.png Graphic file (type png)
 <use images/opencobol-logo.png>
 Package pdftex.def Info: images/opencobol-logo.png  used on input line 16.
 (pdftex.def)             Requested size: 83.64983pt x 83.64725pt.
-<images/Gnu-COBOL.png, id=1101, 1027.84pt x 1004.75375pt>
+<images/Gnu-COBOL.png, id=1096, 1027.84pt x 1004.75375pt>
 File: images/Gnu-COBOL.png Graphic file (type png)
 <use images/Gnu-COBOL.png>
 Package pdftex.def Info: images/Gnu-COBOL.png  used on input line 20.
 (pdftex.def)             Requested size: 83.64983pt x 81.76175pt.
-<images/GitHub-Logo.png, id=1102, 1027.84pt x 1027.84pt>
+<images/GitHub-Logo.png, id=1097, 1027.84pt x 1027.84pt>
 File: images/GitHub-Logo.png Graphic file (type png)
 <use images/GitHub-Logo.png>
 Package pdftex.def Info: images/GitHub-Logo.png  used on input line 28.
@@ -1054,22 +1072,25 @@ chapter F.
 
 
 ] (target/dokumentation.aux (target/title.aux) (target/chapters/1-Aufgabenanalyse.aux) (target/chapters/2-Verfahrensbeschreibung.aux) (target/chapters/3-Programmbeschreibung.aux) (target/chapters/4-Testdokumentation.aux) (target/chapters/5-ZusammenfassungUndAusblick.aux) (target/chapters/B-Benutzeranleitung.aux) (target/chapters/C-Entwicklungsumgebung.aux) (target/chapters/D-VerwendeteHilfsmittel.aux) (target/chapters/E-Erklaerung.aux) (target/chapters/F-Aufgabenstellung.aux) (target/chapters/G-Quellcode.aux))
+
+LaTeX Warning: There were undefined references.
+
 Package rerunfilecheck Info: File `dokumentation.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
  ) 
 Here is how much of TeX's memory you used:
- 24557 strings out of 478268
- 461495 string characters out of 5846346
- 1114936 words of memory out of 5000000
+ 24556 strings out of 478268
+ 461478 string characters out of 5846346
+ 1114847 words of memory out of 5000000
  41360 multiletter control sequences out of 15000+600000
  526637 words of font info for 135 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  108i,21n,106p,10660b,2060s stack positions out of 10000i,1000n,20000p,200000b,200000s
 {/usr/local/texlive/2022/texmf-dist/fonts/enc/dvips/lm/lm-ec.enc}{/usr/local/texlive/2022/texmf-dist/fonts/enc/dvips/lm/lm-ts1.enc}</usr/local/texlive/2022/texmf-dist/fonts/type1/public/lm/lmbx12.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/lm/lmr12.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/lm/lmri12.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/lm/lmro12.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/lm/lmssbx10.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/lm/lmtt12.pfb>
-Output written on target/dokumentation.pdf (59 pages, 578251 bytes).
+Output written on target/dokumentation.pdf (59 pages, 577431 bytes).
 PDF statistics:
- 1502 PDF objects out of 1728 (max. 8388607)
- 1399 compressed objects within 14 object streams
- 843 named destinations out of 1000 (max. 500000)
+ 1498 PDF objects out of 1728 (max. 8388607)
+ 1395 compressed objects within 14 object streams
+ 842 named destinations out of 1000 (max. 500000)
  33665 words of extra memory for PDF output out of 35830 (max. 10000000)
 

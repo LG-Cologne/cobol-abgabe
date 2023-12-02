@@ -2,31 +2,29 @@
 
 
 \section{Interpretation der Aufgabe}\label{sec:interpretation-der-aufgabe}
-Im Rahmen des COBOL-Kurses besteht die Aufgabe, ein Programm zu entwickeln, welches die Texteingabe über die bekannte Mobiltelefon-Tastatur, bestehend aus den Ziffern 0--9 und den Zeichen * und~\#, vereinfacht.\\
+Im Rahmen des COBOL-Kurses besteht die Aufgabe, ein Programm zu entwickeln, welches Abbrechnungsdaten aus einem Journal einliest und auswertet.\\
 \noindent
-Die einzelnen Zifferntasten sind auf der Tastatur mit mehreren Buchstaben belegt, woraus sich folgendes Mapping ergibt:
+Das Journal ist eine Textdatei, die Zeilen weise Abbrechnungen auflistet. Teil einer Abbrechnung sind: 
 
-\begin{table}[h]
-    \centering
-    \label{tab:tastatur-aufbau}
-    \begin{tabular}{|ll|}
-        \hline
-        1 & ␣ (Leerzeichen) \\
-        2 & A B C           \\
-        3 & D E F           \\
-        4 & G H I           \\
-        5 & J K L           \\
-        6 & M N O           \\
-        7 & P Q R S         \\
-        8 & T U V           \\
-        9 & W X Y Z         \\
-        0 & . (Punkt)       \\\hline
-    \end{tabular}
-    \caption{Struktureller Aufbau der Tastatur}
-\end{table}
+% \begin{table}[h]
+%     \centering
+%     \label{tab:tastatur-aufbau}
+%     \begin{tabular}{|l|l|l|l|l|}
+%         \hline
+%         Datum & KundenID & LeistungsID & Einzelpreis & Anzahl \hline
+%     \end{tabular}
+%     \caption{Struktureller Aufbau der Tastatur}
+% \end{table}
+
 \noindent
-Um \zB~ein \textit{S} über die Tastatur einzugeben, muss die Taste 7 viermal betätigt werden.
-Das Wort START würde also über den Zahlencode 7777827778 eingeben werden.
+
+Die Datei ist nach KundenID und danach nach LeistungsID vorsortiert.\\
+
+Für jeden erkannten Kunden soll nun eine Rechnung erstellt werden, welche auswertet welche Leistungen in anspruch genommen wurden und wie viel diese gekostet haben.\\
+
+Abschließend soll die Gesamtabrechnung errechent werden, welche die Gesamtkosten eines Kunden zusammenfasst.
+
+Die Rechnungen aller Kunden sollen in einer Rechnungsdatei gemeinsam abgespeichert werden.
 
 Es soll eine Eingabemethode entwickelt werden, die pro Buchstabe nur eine Zifferntaste benötigt, indem für alle Buchstaben eines Worts die Taste, in der sie vorkommen, lediglich einmal gedrückt wird.
 START würde bei dieser Methode mit dem Zifferncode 78278 kodiert werden.
