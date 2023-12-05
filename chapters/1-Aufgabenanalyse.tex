@@ -4,61 +4,35 @@
 \section{Interpretation der Aufgabe}\label{sec:interpretation-der-aufgabe}
 Im Rahmen des COBOL-Kurses besteht die Aufgabe, ein Programm zu entwickeln, welches Abbrechnungsdaten aus einem Journal einliest und auswertet.\\
 \noindent
-Das Journal ist eine Textdatei, die Zeilen weise Abbrechnungen auflistet. Teil einer Abbrechnung sind: 
+Das Journal ist eine Textdatei, die zeilenweise Abbrechnungen auflistet. Teil einer Abbrechnung sind: 
 
-% \begin{table}[h]
-%     \centering
-%     \label{tab:tastatur-aufbau}
-%     \begin{tabular}{|l|l|l|l|l|}
-%         \hline
-%         Datum & KundenID & LeistungsID & Einzelpreis & Anzahl \hline
-%     \end{tabular}
-%     \caption{Struktureller Aufbau der Tastatur}
-% \end{table}
+\begin{table}[h]
+    \centering
+    \begin{tabular}{|l|l|l|l|l|}
+        Datum & KundenID & LeistungsID & Einzelpreis & Anzahl
+    \end{tabular}
+    \caption{Struktureller Aufbau der Tastatur}
+\end{table}
 
 \noindent
+\\
+Die Datei ist nach KundenID und danach nach LeistungsID vorsortiert.
+\\
+Für jeden erkannten Kunden soll nun eine Rechnung erstellt werden, welche auswertet welche Leistungen in Anspruch genommen wurden und wie viel diese gekostet haben.
+\\
+Abschließend soll eine Rechnung erstellt werden, welche die Gesamtkosten eines Kunden zusammenfasst. Die Rechnung beginnt mit der KundenID und gibt dann eine Tabelle aus mit allen erhobenen Leistungen. Diese Besteht aus folgenden Spalten:
 
-Die Datei ist nach KundenID und danach nach LeistungsID vorsortiert.\\
+\begin{table}[h]
+    \centering
+    \begin{tabular}{|l|l|l|l|l|l|}
+        Position & LeistungsID & Bezeichnung der Leistung & Anzahl & Einzelpreis & Gesamtpreis
+    \end{tabular}
+    \caption{Abrechnungszeile}
+\end{table}
 
-Für jeden erkannten Kunden soll nun eine Rechnung erstellt werden, welche auswertet welche Leistungen in anspruch genommen wurden und wie viel diese gekostet haben.\\
-
-Abschließend soll die Gesamtabrechnung errechent werden, welche die Gesamtkosten eines Kunden zusammenfasst.
-
-Die Rechnungen aller Kunden sollen in einer Rechnungsdatei gemeinsam abgespeichert werden.
-
-Es soll eine Eingabemethode entwickelt werden, die pro Buchstabe nur eine Zifferntaste benötigt, indem für alle Buchstaben eines Worts die Taste, in der sie vorkommen, lediglich einmal gedrückt wird.
-START würde bei dieser Methode mit dem Zifferncode 78278 kodiert werden.
-Hierzu soll das Programm ein Wörterbuch anlegen, welches ein nicht injektives Mapping von Zifferncodes zu Wörtern und deren Häufigkeit speichert.
-Ist ein Wort noch nicht im Wörterbuch bekannt, kann es über einen expliziten Modus eingegeben werden.
-Dieser Modus nimmt ebenfalls Zifferncodes entgegen, mit der Besonderheit, dass für jeden Buchstaben des Wortes, welches eingegeben werden soll auch die Anzahl der Tastendrücke angegeben wird, die nötig sind, um den jeweiligen Buchstaben zu codieren.\\
-START würde im expliziten Modus mit 7481217381 codiert werden, wobei die Werte an den geraden Indizes (beginnend bei 1) für die Anzahl der Tastendrücke stehen.
-Das Abschließen der Eingabe eines Wortes soll über ein Leerzeichen (Taste 1) oder einen Punkt (Taste 0) erfolgen.
-Das gilt sowohl für den expliziten Modus, als auch für den normalen Modus.
-Nach vollständiger Eingabe im expliziten Modus wird das Wort im Wörterbuch abgespeichert.\\
-Wie oben erwähnt ist das Mapping nicht injektiv, weshalb nach jeder Eingabe eines Wortes eine Bestätigung des Nutzers erfolgen soll.
-Akzeptiert er das Wort, soll die Häufigkeit dieses Wortes um eins erhöht werden.\\
-Es gibt genau drei Fälle einer Eingabe im normalen Modus, die abgedeckt werden müssen:
-
-\begin{enumerate}[label={\textbf{Fall~\arabic*:}}, ref={Fall~\arabic*}, leftmargin=*, noitemsep]\label{enm:faelle}
-    \item \label{itm:fall-nicht-existent}{Es existiert bisher kein Wort zum eingegebenen Zifferncode.
-    Der Nutzer wird in den Explizitmodus weitergeleitet.}
-    \item \label{itm:fall-eins-existent}{Es ist genau ein Wort zu diesem Code im Wörterbuch vorhanden.
-    Der Nutzer kann das Wort akzeptieren und es wird Teil des zu bildenden Satzes oder ablehnen und in den expliziten Modus wechseln.}
-    \item \label{itm:fall-mehrere-existent}{Es sind mehrere Wörter im Wörterbuch zum Code vorhanden.
-    Es werden der Reihe nach alle Wörter vorgeschlagen, sortiert nach der Häufigkeit.}
-\end{enumerate}
-
-Zudem soll die Möglichkeit bestehen, ein bereits vorhandenes Wörterbuch, welches beispielsweise aus früheren Programmaufrufen entstanden ist, einlesen zu können.
-Dieses Wörterbuch soll mit einem Texteditor bearbeitbar sein und einem Schema entsprechen.
-Dabei soll ein Wörterbucheintrag einer Zeile entsprechen und den Aufbau [Zahlencode Wort Häufigkeit] haben.
-Die einzelnen Komponenten werden demnach mit einem Leerzeichen getrennt.\\
-\pagebreak
-
-Weitergehend gibt es Beschränkungen, welche einzuhalten sind:
-\begin{itemize}[noitemsep]
-    \item Die maximale Wortlänge betrage 15 Zeichen, die maximale Satzlänge 200 Zeichen.
-    \item Die maximale Anzahl an Einträgen im Wörterbuch kann begrenzt werden, soll aber durch eine simple Änderung im Source Code anpassbar sein.
-\end{itemize}
+Zum ermitteln der \enquote{Bezeichnung der Leistung} soll eine Datei eingelesen werden, welche die LeistungsID und die zugehörigen Bezeichnung enthält.\\
+Abschließend soll der Gesamtbetrag der Rechnung ausgegeben werden.\\
+Die Rechnungen aller Kunden sollen in einer einzelnen Rechnungsdatei gemeinsam abgespeichert werden und gut sichtbar voneinander getrennt sein.\\
 
 
 \section{Anforderung an das Programm}\label{sec:anforderung-an-das-programm}
@@ -66,96 +40,95 @@ Aus der~\nameref{ch:aufgabenstellung}~geht hervor, dass das Programm folgenden A
 
 Es muss
 \begin{itemize}[noitemsep]
-    \item Wörter über die Tastatur einlesen
-    \item Sätze bilden und ausgeben
-    \item ein Wörterbuch anlegen und erweitern
-    \item vorhandene Wörterbücher einlesen
-    \item das Wörterbuch beim Exportieren sortieren
-    \item die Wortvorschläge sortiert nach der Häufigkeit anzeigen
+    \item Ein Journal zeilenweise einlesen
+    \item Die genutzten Leistungen für jeden Kunden ermitteln
+    \item Aus den Leistungen die Gesamtkosten für jeden Kunden ermitteln
+    \item Für jeden Kunden eine Rechnung erstellen
+    \item Die Rechnungen in einer Rechnungsdatei speichern
 \end{itemize}
 können.
 Zusätzlich sollte das Programm eine angemessene Laufzeit haben und geeignete Datenstrukturen verwenden.
 
 \section{Fehlerarten}\label{sec:fehlerarten}
+% TODO: Fehlerarten beschreiben
+% Während der Laufzeit des Programms kann es zu unterschiedlichen Fehlerarten kommen, die alle eine passende Behandlung brauchen.
 
-Während der Laufzeit des Programms kann es zu unterschiedlichen Fehlerarten kommen, die alle eine passende Behandlung brauchen.
+% \subsection{Technische Fehler}\label{subsec:technische-fehler}
+% Durch das Arbeiten mit Dateien kann es zu technischen Fehlern kommen.
+% Wenn der Nutzer zum Beispiel ein externes Wörterbuch einlesen möchte und es im falschen Verzeichnis abgelegt hat, muss das Programm entsprechend reagieren.
 
-\subsection{Technische Fehler}\label{subsec:technische-fehler}
-Durch das Arbeiten mit Dateien kann es zu technischen Fehlern kommen.
-Wenn der Nutzer zum Beispiel ein externes Wörterbuch einlesen möchte und es im falschen Verzeichnis abgelegt hat, muss das Programm entsprechend reagieren.
-
-Das Programm muss außerdem mit unerwarteten Benutzer-Eingaben umgehen können.
-Ist das nicht der Fall, könnte sich der Benutzer-Dialog in einer Endlosschleife aufhängen.
+% Das Programm muss außerdem mit unerwarteten Benutzer-Eingaben umgehen können.
+% Ist das nicht der Fall, könnte sich der Benutzer-Dialog in einer Endlosschleife aufhängen.
 
 
-\subsection{Syntaktische Fehler}\label{subsec:syntaktische-fehler}
+% \subsection{Syntaktische Fehler}\label{subsec:syntaktische-fehler}
 
-Durch die vielen Benutzereingaben existieren sehr viele Stellen, an denen es zu syntaktischen Fehlern kommen kann.
-Um Fehler zu vermeiden, muss ein externes Wörterbuch den folgenden Anforderungen entsprechen:
-\begin{itemize}[noitemsep]
-    \item Einzelne Wörterbucheinträge werden zeilenweise gespeichert.
-    \item Ein Eintrag besteht aus drei Komponenten: Das T9-Kodierte Wort (max. 15 Ziffern), dem Wort-Text (max. 15 Zeichen) und der Häufigkeit (max. dreistellige Ganzzahl).
-    \item Die drei Komponenten werden jeweils durch ein Leerzeichen getrennt.
-\end{itemize}
-Werden diese Bedingungen nicht eingehalten, wird es zu Fehlern kommen.
-Bei der Auswahl des Wörterbuchs kann der Nutzer außerdem den Namen falsch eingeben, was wiederum Probleme verursacht.
+% Durch die vielen Benutzereingaben existieren sehr viele Stellen, an denen es zu syntaktischen Fehlern kommen kann.
+% Um Fehler zu vermeiden, muss ein externes Wörterbuch den folgenden Anforderungen entsprechen:
+% \begin{itemize}[noitemsep]
+%     \item Einzelne Wörterbucheinträge werden zeilenweise gespeichert.
+%     \item Ein Eintrag besteht aus drei Komponenten: Das T9-Kodierte Wort (max. 15 Ziffern), dem Wort-Text (max. 15 Zeichen) und der Häufigkeit (max. dreistellige Ganzzahl).
+%     \item Die drei Komponenten werden jeweils durch ein Leerzeichen getrennt.
+% \end{itemize}
+% Werden diese Bedingungen nicht eingehalten, wird es zu Fehlern kommen.
+% Bei der Auswahl des Wörterbuchs kann der Nutzer außerdem den Namen falsch eingeben, was wiederum Probleme verursacht.
 
-Des Weiteren könnte der Nutzer bei der Eingabe im normalen Modus und im Explizitmodus die syntaktischen Vorgaben missachten und damit Fehler hervorrufen.
-Für die Eingabe im normalen Modus gilt:
-\begin{itemize}[noitemsep]
-    \item Es sind maximal 16 Zeichen erlaubt (15 Buchstaben und 1 Punkt bzw. Leerzeichen).
-    \item Es müssen mindestens 2 Zeichen eingegeben werden.
-    \item Außer den Ziffern von 0-9 und dem Leerzeichen sind keine anderen Zeichen erlaubt.
-    \item Es muss genau eine 1 (Leerzeichen) oder eine 0 (Punkt) am Wortende stehen.
-    An anderen Stellen im Wort sind diese beiden Zeichen nicht erlaubt.
-    \item Innerhalb des Wortes sind keine Leerzeichen (␣) erlaubt.
-    \item Nach einer 0 oder 1 dürfen nur noch Leerzeichen stehen.
-\end{itemize}
+% Des Weiteren könnte der Nutzer bei der Eingabe im normalen Modus und im Explizitmodus die syntaktischen Vorgaben missachten und damit Fehler hervorrufen.
+% Für die Eingabe im normalen Modus gilt:
+% \begin{itemize}[noitemsep]
+%     \item Es sind maximal 16 Zeichen erlaubt (15 Buchstaben und 1 Punkt bzw. Leerzeichen).
+%     \item Es müssen mindestens 2 Zeichen eingegeben werden.
+%     \item Außer den Ziffern von 0-9 und dem Leerzeichen sind keine anderen Zeichen erlaubt.
+%     \item Es muss genau eine 1 (Leerzeichen) oder eine 0 (Punkt) am Wortende stehen.
+%     An anderen Stellen im Wort sind diese beiden Zeichen nicht erlaubt.
+%     \item Innerhalb des Wortes sind keine Leerzeichen (␣) erlaubt.
+%     \item Nach einer 0 oder 1 dürfen nur noch Leerzeichen stehen.
+% \end{itemize}
 
-Für die Eingabe im Explizitmodus gelten ähnliche Vorgaben:
-\begin{itemize}[noitemsep]
-    \item Es sind maximal 31 Zeichen erlaubt (15 Buchstaben, kodiert als Paare, und 1 Punkt bzw. Leerzeichen).
-    \item Es müssen mindestens 3 Zeichen eingegeben werden.
-    \item Außer den Ziffern von 0-9 und dem Leerzeichen sind keine anderen Zeichen erlaubt.
-    \item Es muss genau eine 1 (Leerzeichen) oder eine 0 (Punkt) am Wortende stehen.
-    \item Innerhalb des Wortes sind keine Leerzeichen erlaubt.
-    \item Nach dem abschließenden Satzzeichen dürfen nur noch Leerzeichen stehen.
-\end{itemize}
+% Für die Eingabe im Explizitmodus gelten ähnliche Vorgaben:
+% \begin{itemize}[noitemsep]
+%     \item Es sind maximal 31 Zeichen erlaubt (15 Buchstaben, kodiert als Paare, und 1 Punkt bzw. Leerzeichen).
+%     \item Es müssen mindestens 3 Zeichen eingegeben werden.
+%     \item Außer den Ziffern von 0-9 und dem Leerzeichen sind keine anderen Zeichen erlaubt.
+%     \item Es muss genau eine 1 (Leerzeichen) oder eine 0 (Punkt) am Wortende stehen.
+%     \item Innerhalb des Wortes sind keine Leerzeichen erlaubt.
+%     \item Nach dem abschließenden Satzzeichen dürfen nur noch Leerzeichen stehen.
+% \end{itemize}
 
-Das Bestätigen oder Ablehnen eines Vorschlags wird im Programm durch * (Ja) und \# (Nein) kodiert.
-Wenn der Anwender hier etwas anderes eingibt, können auch Fehler auftreten.
+% Das Bestätigen oder Ablehnen eines Vorschlags wird im Programm durch * (Ja) und \# (Nein) kodiert.
+% Wenn der Anwender hier etwas anderes eingibt, können auch Fehler auftreten.
 
-\subsection{Semantische Fehler}\label{subsec:semantische-fehler}
-Es existieren Eingaben, die den oben erwähnten syntaktischen Regeln genügen, im Programm aber trotzdem Fehler verursachen.
-Wenn im Explizitmodus zum Beispiel die Eingabe \glqq 25\grqq{} getätigt wird, kann dazu kein passender Buchstabe gefunden werden, weil die Eingabe nicht dem \hyperref[tab:tastatur-aufbau]{strukturellen Aufbau der Tastatur} entspricht.
-Gleiches gilt für die Eingabe \glqq 24\grqq{}.
-Die Taste 2 hat nur 3 mögliche Buchstaben.
+% \subsection{Semantische Fehler}\label{subsec:semantische-fehler}
+% Es existieren Eingaben, die den oben erwähnten syntaktischen Regeln genügen, im Programm aber trotzdem Fehler verursachen.
+% Wenn im Explizitmodus zum Beispiel die Eingabe \glqq 25\grqq{} getätigt wird, kann dazu kein passender Buchstabe gefunden werden, weil die Eingabe nicht dem \hyperref[tab:tastatur-aufbau]{strukturellen Aufbau der Tastatur} entspricht.
+% Gleiches gilt für die Eingabe \glqq 24\grqq{}.
+% Die Taste 2 hat nur 3 mögliche Buchstaben.
 
-\section{Fehlerbehandlung}\label{sec:fehlerbehandlung}
-Die unterschiedlichen Fehlerarten müssen alle erkannt und im Anschluss sinnvoll behandelt werden.
+% \section{Fehlerbehandlung}\label{sec:fehlerbehandlung}
+% Die unterschiedlichen Fehlerarten müssen alle erkannt und im Anschluss sinnvoll behandelt werden.
 
-\subsection{Technische Fehler}\label{subsec:technische-fehler-behandlung}
-Wenn ein, vom Anwender ausgewähltes, Wörterbuch nicht gefunden wird, gibt es erneut die Möglichkeit ein Wörterbuch auszuwählen.
-Es kann aber auch weitergehen, ohne, dass ein externes Wörterbuch ausgewählt wurde.
+% \subsection{Technische Fehler}\label{subsec:technische-fehler-behandlung}
+% Wenn ein, vom Anwender ausgewähltes, Wörterbuch nicht gefunden wird, gibt es erneut die Möglichkeit ein Wörterbuch auszuwählen.
+% Es kann aber auch weitergehen, ohne, dass ein externes Wörterbuch ausgewählt wurde.
 
-Auch bei unerwarteten Eingaben wird eine erneute Eingabe gefordert, bis eine erwartete Eingabe getätigt wird.
-So wird gesichert, dass sich das Programm deterministisch verhält und nie in einer Endlosschleife landet.
+% Auch bei unerwarteten Eingaben wird eine erneute Eingabe gefordert, bis eine erwartete Eingabe getätigt wird.
+% So wird gesichert, dass sich das Programm deterministisch verhält und nie in einer Endlosschleife landet.
 
-\subsection{Syntaktische Fehler}\label{subsec:syntaktische-fehler-behandlung}
-Beim Einlesen des Wörterbuchs wird für jeden Eintrag geprüft, ob die gewünschte Struktur eingehalten wurde.
-Ist das mindestens ein mal nicht der Fall, wird das Wörterbuch abgelehnt.
-Der Anwender bekommt dann die Möglichkeit ein anderes Wörterbuch einzulesen oder mit einem leeren Wörterbuch fortzufahren.
+% \subsection{Syntaktische Fehler}\label{subsec:syntaktische-fehler-behandlung}
+% Beim Einlesen des Wörterbuchs wird für jeden Eintrag geprüft, ob die gewünschte Struktur eingehalten wurde.
+% Ist das mindestens ein mal nicht der Fall, wird das Wörterbuch abgelehnt.
+% Der Anwender bekommt dann die Möglichkeit ein anderes Wörterbuch einzulesen oder mit einem leeren Wörterbuch fortzufahren.
 
-Jede Benutzereingabe wird auf die oben definierten syntaktischen Regeln geprüft.
-Auch hier gilt: Die Eingabe wird so lange wiederholt, bis die Regeln eingehalten werden.
+% Jede Benutzereingabe wird auf die oben definierten syntaktischen Regeln geprüft.
+% Auch hier gilt: Die Eingabe wird so lange wiederholt, bis die Regeln eingehalten werden.
 
-\subsection{Semantische Fehler}\label{subsec:semantische-fehler-behandlung}
-Entspricht ein eingegebener Explizit-Code nicht dem \hyperref[tab:tastatur-aufbau]{strukturellen Aufbau der Tastatur}, wird eine passende Fehlermeldung ausgegeben und eine erneute Eingabe gefordert.
+% \subsection{Semantische Fehler}\label{subsec:semantische-fehler-behandlung}
+% Entspricht ein eingegebener Explizit-Code nicht dem \hyperref[tab:tastatur-aufbau]{strukturellen Aufbau der Tastatur}, wird eine passende Fehlermeldung ausgegeben und eine erneute Eingabe gefordert.
 
-\subsection{Sonderfälle}\label{subsec:sonderfaelle}
-Ein in der Aufgabenstellung nicht angesprochener Sonderfall tritt auf, wenn der Anwender im normalen Modus ein nicht im Wörterbuch enthaltenes Wort eingibt, in den Explizitmodus weitergeleitet wird und dort ein komplett anderes Wort eingibt.
-Zum Beispiel kann im normalen Modus \glqq 3370\grqq{} eingegeben werden.
-Das Wort wird anschließend nicht im Wörterbuch gefunden und der Anwender gibt im Explizitmodus \glqq 33437423420\grqq{} ein.
-Der Anwender wird in dieser Situation lediglich durch eine Ausgabe auf den Fehler aufmerksam gemacht.
-Wenn der zur Explizit-Eingabe passende Code \glqq 34724\grqq{} schon im Wörterbuch enthalten ist, wird seine Häufigkeit inkrementiert.
-Ist das nicht der Fall, wird er als neuer Eintrag im Wörterbuch aufgenommen.
+% \subsection{Sonderfälle}\label{subsec:sonderfaelle}
+% Ein in der Aufgabenstellung nicht angesprochener Sonderfall tritt auf, wenn der Anwender im normalen Modus ein nicht im Wörterbuch enthaltenes Wort eingibt, in den Explizitmodus weitergeleitet wird und dort ein komplett anderes Wort eingibt.
+% Zum Beispiel kann im normalen Modus \glqq 3370\grqq{} eingegeben werden.
+% Das Wort wird anschließend nicht im Wörterbuch gefunden und der Anwender gibt im Explizitmodus \glqq 33437423420\grqq{} ein.
+% Der Anwender wird in dieser Situation lediglich durch eine Ausgabe auf den Fehler aufmerksam gemacht.
+% Wenn der zur Explizit-Eingabe passende Code \glqq 34724\grqq{} schon im Wörterbuch enthalten ist, wird seine Häufigkeit inkrementiert.
+% Ist das nicht der Fall, wird er als neuer Eintrag im Wörterbuch aufgenommen.

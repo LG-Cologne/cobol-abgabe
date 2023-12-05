@@ -4,27 +4,14 @@
 \section{Gesamtsystem}\label{sec:gesamtsystem}
 Das System arbeitet nach dem \textbf{E}ingabe, \textbf{V}erarbeitung, \textbf{A}usgabe-Prinzip, kurz EVA.
 EVA ist ein Grundprinzip der Datenverarbeitung, bei welchem die drei Schritte sequenziell durchlaufen werden.
-Das Prinzip ist im Normalfall zustandslos, weshalb dieses System nicht dem reinen EVA-Prinzip entspricht.
-Es ist mehr eine leichte Abwandlung dessen, da Eingaben, zu unterschiedlichen Zeitpunkten, zu einer anderen Ausgabe führen können.
+In diesem Fall lassen sich die drei Fälle nur von außen voneinander Trennen. So wird die Eingabe Zeilenweise vollzogen. Jede eingelesene Zeile wird sofort verarbeitet und sodass eine Ausgabezeile erstellt und ausgegeben wird. Jeder Schritt besteht also aus allen drei Phasen.\\
 
 \subsection{Eingabe}\label{subsec:eingabe}
-Es gibt zwei unterschiedliche Eingabemodi.
-Sowohl der Explizit- als auch der Normalmodus nehmen über die Kommandozeile Eingaben entgegen.
-Der Normalmodus ist für die Eingabe von bereits bekannten Wörtern im Wörterbuch gedacht, wohingegen der Explizitmodus neue, unbekannte Wörter entgegennimmt.
-Einen Spezialfall bietet das Einlesen eines bereits vorhandenen Wörterbuchs.
-Es lässt sich zu Beginn des Programmstarts ein Wörterbuch einlesen, um das vom Programm genutzte Wörterbuch zu befüllen.
-Der Nutzer muss das externe Wörterbuch am besten in den Ordner legen, in welchem sich die~.exe-Datei befindet und beim Start des Programms den Namen der Datei angeben.
-Ansonsten kann der Nutzer auch einen relativen bzw. absoluten Pfad angeben.
+Es gibt keine direkte Eingabe, da das Programm durch das einlesen einer Datei gesteuert wird.
 
 \subsection{Verarbeitung}\label{subsec:verarbeitung}
-Je nach Eingabemodus wird die Nutzereingabe unterschiedlich verarbeitet.
-Ist sie über den Normalmodus passiert, wird im Wörterbuch ein passendes Mapping zum eingegebenen Zahlencode gesucht.
-Je nach den zuvor definierten~\hyperref[enm:faelle]{Fällen}~wird unterschiedlich vorgegangen.\\
-Im~\ref{itm:fall-nicht-existent} wird der Nutzer automatisch in den Explizitmodus geleitet.\\
-Im~\ref{itm:fall-eins-existent} wird der Nutzer durch Eingabeaufforderung gefragt, ob das gefundene Wort gewünscht ist.
-Falls \textit{Ja} wird das Wort dem aktuellen Satz hinzugefügt, falls \textit{Nein} wird der Nutzer automatisch in den Explizitmodus geleitet.\\
-Im letzten~\ref{itm:fall-mehrere-existent} wird für jedes der gefundenen Wörter abgefragt, ob es das gewünschte ist, bis der Nutzer das erste Mal mit einem \textit{Ja} antwortet.
-Sollte es keine passenden Wörter mehr geben, da der Nutzer durchgehend mit \textit{Nein} geantwortet hat, wird der Nutzer auch hier in den Explizitmodus geleitet.\\
+Die Verarbeitung nutzt das Prinzip des Gruppenwechsels. Dazu wird zunächst die KundenID eingelesen und gespeichert. Selbiges geschiet mit der LeistungsID. Solange die neu eingelesen LeistungsID gleich der vorherigen ist, wird die Anzahl der Leistungen erhöht. Sobald die LeistungsID wechselt, wird die vorherige Leistung in die Rechnung geschrieben und die Anzahl wieder auf 1 gesetzt.\\
+
 
 Erfolgte die Eingabe über den Explizitmodus wird zuerst überprüft, ob sie legal ist.
 ~\ZB~dürfen keine Symbole, sondern nur Ziffern, eingegeben werden und die Eingabe muss mit einem ␣ (Taste 1) oder . (Taste 0) enden.
