@@ -16,14 +16,18 @@ Das Journal ist eine Textdatei, die zeilenweise Abbrechnungen auflistet. Teil ei
 
 \noindent
 \\
-KundenID besteht dabei aus einem führenden \enquote{K} folgend von einer fünf-stelligen Nummer.
-LeistungsID 
-
-Die Datei ist nach KundenID und danach nach LeistungsID vorsortiert.
+Die KundenID besteht dabei aus einem führenden \enquote{K} folgend von einer fünf-stelligen Nummer.\\
+Die LeistungsID besteht aus sechs Ziffern.\\
+Das Datum ist im Format \enquote{JJJJ.MM.TT} angegeben, spielt für die Rechnung jedoch keine relevante Rolle.\\
+Der Einzelpreis besitzt immer zwei Nachkommastellen und ist in Euro angegeben.\\
+Die Anzahl ist eine ganze Zahl bis maximal 99.\\
 \\
-Für jeden erkannten Kunden soll nun eine Rechnung erstellt werden, welche auswertet welche Leistungen in Anspruch genommen wurden und wie viel diese gekostet haben.
+Das einzulesende Journal ist bereits mach Kunden-ID und Leistungs-ID vorsortiert.
 \\
-Abschließend soll eine Rechnung erstellt werden, welche die Gesamtkosten eines Kunden zusammenfasst. Die Rechnung beginnt mit der KundenID und gibt dann eine Tabelle aus mit allen erhobenen Leistungen. Diese Besteht aus folgenden Spalten:
+\\
+Für jeden erkannten Kunden soll nun ausgewertet werden, welche Leistungen in Anspruch genommen wurden und wie viel diese gekostet haben.
+\\
+Abschließend soll eine Rechnung erstellt werden, welche die Gesamtkosten eines Kunden zusammenfasst. Die Rechnung beginnt mit der KundenID und gibt dann eine Tabelle aus mit allen erhobenen Leistungen. Eine Leistung besteht dabei aus folgenden Spalten:
 
 \begin{table}[h]
     \centering
@@ -33,8 +37,13 @@ Abschließend soll eine Rechnung erstellt werden, welche die Gesamtkosten eines 
     \caption{Abrechnungszeile}
 \end{table}
 
-Zum ermitteln der \enquote{Bezeichnung der Leistung} soll eine Datei eingelesen werden, welche die LeistungsID und die zugehörigen Bezeichnung enthält.\\
-Abschließend soll der Gesamtbetrag der Rechnung ausgegeben werden.\\
+
+Die Position ist eine fortlaufende Nummerierung der Leistungen.\\
+Anzahl, Einzelpreis und Leistungs-ID werden 1 zu 1 aus dem Journal übernommen. Der Gesamtpreis ergibt sich aus der Multiplikation von Anzahl und Einzelpreis.\\
+Herauszustllen ist die Bezeichnung der Leistung. Diese ist in einer externen Datei abgelegt in welcher sie der Leistungs-ID gegenübergestellt wird.\\
+\\
+Abschließend werden aus allen erhobenen Leistungen und derem Gesamtpreis die Gesamtkosten des Kunden berechnet und ausgegeben.\\
+\\
 Die Rechnungen aller Kunden sollen in einer einzelnen Rechnungsdatei gemeinsam abgespeichert werden und gut sichtbar voneinander getrennt sein.\\
 
 
