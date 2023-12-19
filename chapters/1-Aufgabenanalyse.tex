@@ -27,7 +27,7 @@ Das einzulesende Journal ist bereits mach Kunden-ID und Leistungs-ID vorsortiert
 \\
 Für jeden erkannten Kunden soll nun ausgewertet werden, welche Leistungen in Anspruch genommen wurden und wie viel diese gekostet haben.
 \\
-Abschließend soll eine Rechnung erstellt werden, welche die Gesamtkosten eines Kunden zusammenfasst. Die Rechnung beginnt mit der KundenID und gibt dann eine Tabelle aus mit allen erhobenen Leistungen. Eine Leistung besteht dabei aus folgenden Spalten:
+Abschließend soll eine Rechnung erstellt werden, welche die Gesamtkosten eines Kunden zusammenfasst. Dabei wird die Rechnung für den Kunden mit der Kunden-ID gekennzeichnet. Folgend wird eine Tabellenstruktur ausgegeben, welche die einzelnen Leistungen und deren Kosten und weitere Informationen zur Leistung auflistet. Eine Leistungzeile besteht dabei aus folgenden Spalten:\\
 
 \begin{table}[h]
     \centering
@@ -37,14 +37,13 @@ Abschließend soll eine Rechnung erstellt werden, welche die Gesamtkosten eines 
     \caption{Abrechnungszeile}
 \end{table}
 
-
-Die Position ist eine fortlaufende Nummerierung der Leistungen.\\
-Anzahl, Einzelpreis und Leistungs-ID werden 1 zu 1 aus dem Journal übernommen. Der Gesamtpreis ergibt sich aus der Multiplikation von Anzahl und Einzelpreis.\\
-Herauszustllen ist die Bezeichnung der Leistung. Diese ist in einer externen Datei abgelegt in welcher sie der Leistungs-ID gegenübergestellt wird.\\
+Die Position ist eine Inkrementierung der Leistungen für einen Kunden.\\
+Leistungs-ID, Anzahl und Einzelpreis werden direkt aus dem Journal übernommen. Der Gesamtpreis ergibt sich aus der Multiplikation von Anzahl und Einzelpreis.\\
+Die Bezeichnungen der Leistungen sind in einer externen Datei abgelegt. Diese Glossar beinhaltet zu allen bekannten Leistungs-IDs eine passende Bezeichnung\\
 \\
 Abschließend werden aus allen erhobenen Leistungen und derem Gesamtpreis die Gesamtkosten des Kunden berechnet und ausgegeben.\\
 \\
-Die Rechnungen aller Kunden sollen in einer einzelnen Rechnungsdatei gemeinsam abgespeichert werden und gut sichtbar voneinander getrennt sein.\\
+Die Rechnungen aller Kunden sollen voneinander getrennt in einer einzelnen Rechnungsdatei gemeinsam abgespeichert werden.\\
 
 
 \section{Anforderung an das Programm}\label{sec:anforderung-an-das-programm}
