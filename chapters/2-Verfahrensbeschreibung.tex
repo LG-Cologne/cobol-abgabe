@@ -4,40 +4,39 @@
 \section{Gesamtsystem}\label{sec:gesamtsystem}
 Das System arbeitet in grundzügen nach dem \textbf{E}ingabe, \textbf{V}erarbeitung, \textbf{A}usgabe-Prinzip, kurz EVA.
 EVA ist ein Grundprinzip der Datenverarbeitung, bei welchem die drei Schritte sequenziell durchlaufen werden.
-In diesem Fall gibt es jedoch keine explizite Trennung der drei Fälle, da die Phasen zeitgleich ablaufen. So wird die Eingabe Zeilenweise vollzogen und jede eingelesene Zeile sofort verarbeitet. Nach der verarbeitung wird falls möglich eine Ausgabezeile erstellt und ausgegeben. Jeder Schritt besteht also aus allen drei Phasen.\\
+In diesem Fall gibt es jedoch keine explizite Trennung der drei Fälle, da die Phasen zeitgleich ablaufen. So wird die Eingabe Zeilenweise vollzogen und jede eingelesene Zeile sofort verarbeitet. Nach der Verarbeitung wird falls möglich eine Ausgabezeile erstellt und ausgegeben. Jeder Schritt besteht also aus allen drei Phasen.\\
 
 \subsection{Eingabe}\label{subsec:eingabe}
-Die Journal Datei wird zeilenweise eingelesen. Dabei werden die Überschriften ignoriert und beginnend mit der ersten inhaltlichen Zeile die Verarbeitung gestartet.\\
+Die Journal Datei wird zeilenweise eingelesen. Dabei wird die Kopfzeile mit den Spaltenüberschriften ignoriert und beginnend mit der ersten inhaltlichen Zeile die Verarbeitung gestartet.\\
 
 \subsection{Verarbeitung}\label{subsec:verarbeitung}
 Die Verarbeitung nutzt das Prinzip des Gruppenwechsels. Dieses lässt sich anwenden, da die einzulesende Datei bereits nach Kunden-ID und Leistungs-ID vorsortiert ist.\\
 Dabei wird die Datei zeilenweise eingelesen und etappenweise ausgewertet.
 
 \subsubsection{Initialieren des Kunden}\label{subsubsec:initialisieren-des-kunden}
-Im ersten Schritt wird der aktuelle Kunde ermittelt und initialisiert. Neben dem speichern der Kunden-ID, werden die Position und die Gesamtkosten in ihren Startzustand versetzt. Beide Werten werden später genutzt.\\
-Außerdem die Rechnungdatei befüllt.\\
-Dabei wird die Kunden-ID als Überschrift gesetzt und die Kopfzeile der Tabelle zum auflisten der jeweiligen Leistungen gedruckt.\\
+Im ersten Schritt wird der aktuelle Kunde ermittelt und initialisiert. Bei der Initialisierung wird die Kunden-ID gespeichert und die beden Werte Position und Gesamtkosten in ihren Startzustand versetzt. Beide Werten werden in den weiteren Verarbeitungsschritten genutzt.\\
+Außerdem wird die Rechnungdatei befüllt. Dabei wird die Kunden-ID als Überschrift gesetzt und die Kopfzeile der Tabelle zum auflisten der jeweiligen Leistungen gedruckt.\\
 
 \subsubsection{Initialieren der Leistung}\label{subsubsec:initialisieren-der-leistung}
-Anschließend wird die aktuelle Leistung initialisiert. Analog zur Kunden Initialierung wird die Leistungs-ID als Schlüssel gesetzt. Außerdem wird die zu sammelnde Anzahl, wie auch der aktuelle Gesamtpreis der Leistung in den Startzustand versetzt. Mit diesen wird ebenfalls erst später weitergearbeitet.\\
+Anschließend wird die aktuelle Leistung initialisiert. Analog zur Kunden Initialierung wird die Leistungs-ID gespeichert. Außerdem wird die zu sammelnde Anzahl, wie auch der aktuelle Gesamtpreis der Leistung in den Startzustand versetzt. Mit diesen wird ebenfalls erst später weitergearbeitet.\\
 Nun wird die Position der Leistung um eins erhöht. Dieser Wert spiegelt die Anzahl an unterschiedlichen Leistungen eines Kunden wieder und wird mit jeder neuen Leistung inkrementiert.\\
 Für die Ermittlung der Leistungsbezeichnung wird ein Unterprogramm aufgerufen. Siehe \ref{subsubsec:ermittlung-der-leistungsbezeichnung}.\\
 
 \subsubsection{Verarbeitung}
 Im tiefsten Schritt des Gruppenwechsels wird die eingelesene Zeile final ausgewertet. Dazu wird die Anzahl der Leistung, um die im Satz angegebene Anzahl erhöht.\\
 Die Datei wird nun zeilenweise weiter eingelesen.\\
-Solange sich die beiden IDs nicht ändern, wird für jede Zeile die Anzahl der aktuellen Leistung hochgezählt. Anhand dieser kann dann später der Gesamtpreis der jeweiligen Leistung berechnet werden.\\
+Für jede neue Zeile wird die Anzahl der aktuellen Leistung hochgezählt. Anhand dieser kann dann später der Gesamtpreis für die jeweilige Leistung berechnet werden.\\
 Dies geschieht solange, bis sich entweder die Kunden-ID oder die Leistungs-ID ändert.
 
 \subsubsection{Leistungs-ID ändert sich}\label{subsubsec:leistungs-id-aendert-sich}
 Ändert sich die Leistungs-ID, so gilt die aktuelle Leistung als abgeschlossen. Dabei kann aus der ermittelten Anzahl und des gespeicherten Einzelpreises der Gesamtpreis der Leistung errechnet werden.\\
-Damit sind alle Informationen einer Leistung bekannt und können in die Rechnung geschrieben werden.\\
+Damit sind alle Informationen einer Leistung bekannt und die Leistung ist abgeschlossen. Dazu werden alle gesammelten Informationen aufbereitet und können in die Rechnungsdatei gedruckt werden\\
 Zum Abschluss wird der errechnete Gesamtpreis der Leistung auf die Gesamtkosten des Kunden addiert.\\
 Nun wird der Prozess bei der Leistungsinitialisierung \ref{subsubsec:initialisieren-der-leistung} mit der neuen Leistungs-ID fortgesetzt.\\
 
 \subsubsection{Kunden-ID ändert sich}\label{subsubsec:kunden-id-aendert-sich}
 Ändert sich die Kunden-ID, so gilt der aktuelle Kunde als abgeschlossen.\\
-Aus der errechneten Gesamtkosten wird die Rechnung für den Kunden abgeschlossen und inerhalb der Rechnugnsdatei abgetrennt.\\
+Um die Rechnung in der Ausgabedatei korrekt abzuspeichern werden die errechneten Gesamtkosten gedruckt. Anschließend wird die Rechnung optisch abgetrennt um weitere Kunden in die Rechnugnsdatei schreiben zu können.\\
 Der Prozess wird nun in der Kundeninitialisierung \ref{subsubsec:initialisieren-des-kunden} mit der neuen Kunden-ID fortgesetzt.\\
 \\
 
@@ -61,8 +60,8 @@ Im Zuge des Programms werden zwei Dateien eingelesen.\\
 Für beide Dateien gibt es eine Datenstruktur die alle Informationen eines Datensatzes speichert.\\
 
 \subsubsection{Gedächtnisspeicher}\label{subsubsubsubsec:gedaechtnisspeicher}
-Um den Gruppenwechsel wie beschrieben zu realisieren müssen die aktuellen Daten einer Rechnung gespeichert werden. Dies unterscheidet sich in die allgemeinen Rechnungsdaten und die Rechnungsdaten einer Leistung.\\
-Die allgemeinen Rechnungsdaten dienen als speicher für Kunden-ID und Gesamtsumme.\\
+Um den Gruppenwechsel wie beschrieben zu realisieren müssen die aktuellen Daten einer Rechnung gespeichert werden. Dies unterscheidet sich in die allgemeinen Rechnungsdaten und die zeilenweisen Rechnungsdaten einer Leistung.\\
+Die allgemeinen Rechnungsdaten dienen als Speicher für Kunden-ID und Gesamtsumme.\\
 Die zeilenweisen Rechnugnsdaten speichern die Leistungsanzahl wie auch die restlichen Daten einer Leistung.\\
 
 \subsection{Ausgabestrukturen}\label{subsubsec:ausgabestrukturen}

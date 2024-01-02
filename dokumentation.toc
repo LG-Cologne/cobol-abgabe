@@ -6,17 +6,17 @@
 \contentsline {section}{\numberline {2.1}Gesamtsystem}{6}{section.8}%
 \contentsline {subsection}{\numberline {2.1.1}Eingabe}{6}{subsection.9}%
 \contentsline {subsection}{\numberline {2.1.2}Verarbeitung}{6}{subsection.10}%
-\contentsline {subsubsection}{\nonumberline Initialieren des Kunden}{6}{subsubsection*.12}%
+\contentsline {subsubsection}{\nonumberline Initialieren des Kunden}{7}{subsubsection*.12}%
 \contentsline {subsubsection}{\nonumberline Initialieren der Leistung}{7}{subsubsection*.14}%
 \contentsline {subsubsection}{\nonumberline Verarbeitung}{7}{subsubsection*.16}%
-\contentsline {subsubsection}{\nonumberline Leistungs-ID ändert sich}{7}{subsubsection*.18}%
+\contentsline {subsubsection}{\nonumberline Leistungs-ID ändert sich}{8}{subsubsection*.18}%
 \contentsline {subsubsection}{\nonumberline Kunden-ID ändert sich}{8}{subsubsection*.20}%
 \contentsline {subsubsection}{\nonumberline Ermittlung der Leistungsbezeichnung}{8}{subsubsection*.22}%
 \contentsline {section}{\numberline {2.2}Datenstrukturen}{9}{section.23}%
 \contentsline {subsection}{\numberline {2.2.1}Datenspeicherstrukturen}{9}{subsection.24}%
 \contentsline {subsubsection}{\nonumberline Eingabespeicher}{9}{subsubsection*.26}%
 \contentsline {subsubsection}{\nonumberline Gedächtnisspeicher}{9}{subsubsection*.28}%
-\contentsline {subsection}{\numberline {2.2.2}Ausgabestrukturen}{9}{subsection.29}%
+\contentsline {subsection}{\numberline {2.2.2}Ausgabestrukturen}{10}{subsection.29}%
 \contentsline {chapter}{\numberline {3}Programmbeschreibung}{11}{chapter.30}%
 \contentsline {section}{\numberline {3.1}Programmablaufplan}{11}{section.31}%
 \contentsline {section}{\numberline {3.2}Entwicklungsdokumentation}{11}{section.35}%
