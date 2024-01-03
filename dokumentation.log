@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2023.7.14)  2 JAN 2024 12:06
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2023.7.14)  3 JAN 2024 15:38
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -841,7 +841,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 17--31
 
 
 ]
-Overfull \hbox (47.09549pt too wide) in paragraph at lines 34--37
+Overfull \hbox (51.01216pt too wide) in paragraph at lines 34--37
  [][] 
  []
 
@@ -954,6 +954,11 @@ Underfull \hbox (badness 10000) in paragraph at lines 2--3
  []
 
 
+Overfull \hbox (15.274pt too wide) in paragraph at lines 6--7
+[]\T1/lmr/m/n/12 (-20) Es liegt im-mer ei-ne gül-ti-ge und kor-rekt ab-ge-leg-te Ab-gleich-da-tei (^^R   GLOSSAR.txt^^P)
+ []
+
+
 Underfull \hbox (badness 10000) in paragraph at lines 13--18
 
  []
@@ -1019,16 +1024,12 @@ Underfull \hbox (badness 1533) in paragraph at lines 80--80
 \T1/lmr/m/n/12 (+20) der zu über-prü-fen-den Leistungs-ID
  []
 
-) [11
+[11
 
 
 
 
-]
-
-LaTeX Warning: Text page 12 contains only floats.
-
-[12] [13 <./images/Gruppenwechsel-PAP.pdf>] [14 <./images/Gruppenwechsel-NSD.pdf>] [15 <./images/Erhalte_Leistungsbezeichnung-PAP.pdf>]
+]) [12] [13 <./images/Gruppenwechsel-PAP.pdf>] [14 <./images/Gruppenwechsel-NSD.pdf>] [15 <./images/Erhalte_Leistungsbezeichnung-PAP.pdf>]
 \openout2 = `chapters/4-Testdokumentation.aux'.
 
  (./chapters/4-Testdokumentation.tex
@@ -1268,7 +1269,7 @@ Here is how much of TeX's memory you used:
  1141 hyphenation exceptions out of 8191
  108i,20n,107p,10942b,769s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <c:/texlive/2023/texmf-dist/fonts/type1/public/lm/lmbx12.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/lm/lmr12.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/lm/lmri12.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/lm/lmro12.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/lm/lmssbx10.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/lm/lmtt12.pfb>
-Output written on dokumentation.pdf (32 pages, 2366003 bytes).
+Output written on dokumentation.pdf (32 pages, 2366040 bytes).
 PDF statistics:
  466 PDF objects out of 1000 (max. 8388607)
  381 compressed objects within 4 object streams

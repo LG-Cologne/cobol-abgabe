@@ -1,9 +1,9 @@
 \chapter{Programmbeschreibung}\label{ch:programmbeschreibung}
-Im Zuge der Ausgabestellung wird davon ausgegangen, dass es sich bei dem System um ein Teilstück einer Gesamtverarbeitung handelt. Somit ist es fragil und setzt folgenden Vorraussezungen voraus: \\
+Im Zuge der Ausgabestellung wird davon ausgegangen, dass es sich bei dem System um ein Teilstück einer Gesamtverarbeitung handelt. Somit ist es fragil und setzt folgende Vorraussetzungen voraus: \\
 
 \begin{itemize}[noitemsep]
     \item Es liegt immer eine gültige und korrekt abgelegte Eingabedatei (\enquote{JOURNAL.txt}) vor
-    \item Es liegt immer eine gültige und korrekt abgelegte (\enquote{GLOSSAR.txt}) vor
+    \item Es liegt immer eine gültige und korrekt abgelegte Abgleichdatei (\enquote{GLOSSAR.txt}) vor
     \item Die Dateien und deren Inhalt sind korrekt formatiert
     \item Die Daten der Eingabedateien sind korrekt sortiert
 
@@ -14,7 +14,7 @@ Die folgenden Abbildungen beschreiben Teile des Programms.\\
 \\
 Abbildung~\ref{fig:diagramm1} und ~\ref{fig:diagramm2} zeigen den Ablauf des Gruppenwechsels.\\
 \\
-In Abbildung~\ref{fig:diagramm3} wird die Ermittelung der Leistungsbezeichnungen visualisiert.
+In Abbildung~\ref{fig:diagramm3} wird die Ermittlung der Leistungsbezeichnungen visualisiert.
 
 
 \begin{figure}[!h]
@@ -47,7 +47,7 @@ In Abbildung~\ref{fig:diagramm3} wird die Ermittelung der Leistungsbezeichnungen
 
 
 \section{Entwicklungsdokumentation}\label{sec:entwicklerdokumentation}
-Es wurden grundsätzlich sprechende Namen für Variablen, Abschnitte und Paragrafen gewählt. Außerdem sind \texttt{DISPLAY} Statements welche zum Debuggen genutz wurden erhalten geblieben. Mit diesen ist der Programmablauf leichter nachzuvollziehen.
+Es wurden grundsätzlich sprechende Namen für Variablen, Abschnitte und Paragrafen gewählt. Außerdem sind \texttt{DISPLAY} Statements, welche zum Debuggen genutzt wurden erhalten geblieben. Mit diesen ist der Programmablauf leichter nachzuvollziehen.
 
 Die Funktionen der einzelnen Paragrafen sind in Tabelle~\ref{tab:prog-strukt} beschrieben.
 
@@ -63,20 +63,20 @@ Die Funktionen der einzelnen Paragrafen sind in Tabelle~\ref{tab:prog-strukt} be
 %       \hline
        \rowcolor{fhfarbe!10}
        MAIN-PROCEDURE & Hauptablauf welcher den Gruppenwechsel delegiert \\
-       PREPERATION & Spiegelt den Vorlauf zum einlesen einer Datei wieder und öffnet die Eingabe- (JOURNAL.txt) und Ausgabedatei (INVOICE.txt) \\
-       CUSTOMER-PREPERATION & Wertet den akutellen Einabesatz aus und initialisiert daraus einen Kunden \\
+       PREPERATION & Spiegelt den Vorlauf zum Einlesen einer Datei wieder und öffnet die Eingabe- (JOURNAL.txt) und Ausgabedatei (INVOICE.txt) \\
+       CUSTOMER-PREPERATION & Wertet den akutellen Eingabesatz aus und initialisiert daraus einen Kunden \\
        SERVICE-PREPERATION & Wertet den aktuellen Eingabesatz aus und initialisiert daraus eine Leistung \\
        INDIVIDUAL-PROCESSING & Wertet den aktuellen Eingabesatz aus und zählt die Anzahl einer Leistung hoch \\
-       READ-NEXT-LINE & Liest, wenn möglich, die nächste Zeile des Jounrals ein \\
-       SERVICE-COMPLETION & Wertet die aktuelle Leistung aus indem der Gesamtbetrag der Leistung berechnet und mit allen relevanten Leistungsdaten in die Rechnung geschrieben wird \\
+       READ-NEXT-LINE & Liest, wenn möglich, die nächste Zeile des Journals ein \\
+       SERVICE-COMPLETION & Wertet die aktuelle Leistung aus, indem der Gesamtbetrag der Leistung berechnet und mit allen relevanten Leistungsdaten in die Rechnung geschrieben wird \\
        CUSTOMER-COMPLETION & Wertet den aktuellen Kunden aus indem der Gesamtbetrag des Kunden in die Rechnung geschrieben und ein Ende gekennzeichnet wird \\
        COMPLETION & schließt Einlese- und Auslesedatei \\
        
        \rowcolor{fhfarbe!10}
-       GET-SERVICE-TERM & Ermittelt anhand der Leistungs-ID durch einlesen des Leistungsglossar die Leistungsbeschreibung \\
+       GET-SERVICE-TERM & Ermittelt anhand der Leistungs-ID durch Einlesen des Leistungsglossars die Leistungsbeschreibung \\
        CHECK-LINE & Überprüft, ob die aktuell aus dem Glossar eingelesene Leistungs-ID mit der zu überprüfenden Leistungs-ID übereinstimmt \\
-       NEXT-LINE & Liest, wenn möglich die nächste Zeile des Glossars ein\\
-       DISPLAY-JOURNAL & Debugeinheit zum ausgeben der aktuell eingelesenen Daten \\
+       NEXT-LINE & Liest, wenn möglich, die nächste Zeile des Glossars ein\\
+       DISPLAY-JOURNAL & Debugeinheit zum Ausgeben der aktuell eingelesenen Daten \\
     \end{tabularx}
     \caption{Aufgaben der einzelnen logischen Einheiten.}\label{tab:prog-strukt}
 \end{table}

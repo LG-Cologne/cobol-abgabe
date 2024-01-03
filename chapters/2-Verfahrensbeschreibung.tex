@@ -2,9 +2,9 @@
 
 
 \section{Gesamtsystem}\label{sec:gesamtsystem}
-Das System arbeitet in grundzügen nach dem \textbf{E}ingabe, \textbf{V}erarbeitung, \textbf{A}usgabe-Prinzip, kurz EVA.
+Das System arbeitet in Grundzügen nach dem \textbf{E}ingabe, \textbf{V}erarbeitung, \textbf{A}usgabe-Prinzip, kurz EVA.
 EVA ist ein Grundprinzip der Datenverarbeitung, bei welchem die drei Schritte sequenziell durchlaufen werden.
-In diesem Fall gibt es jedoch keine explizite Trennung der drei Fälle, da die Phasen zeitgleich ablaufen. So wird die Eingabe Zeilenweise vollzogen und jede eingelesene Zeile sofort verarbeitet. Nach der Verarbeitung wird falls möglich eine Ausgabezeile erstellt und ausgegeben. Jeder Schritt besteht also aus allen drei Phasen.\\
+In diesem Fall gibt es jedoch keine explizite Trennung der drei Fälle, da die Phasen zeitgleich ablaufen. So wird die Eingabe zeilenweise vollzogen und jede eingelesene Zeile sofort verarbeitet. Nach der Verarbeitung wird falls möglich eine Ausgabezeile erstellt und ausgegeben. Jeder Schritt besteht also aus allen drei Phasen.\\
 
 \subsection{Eingabe}\label{subsec:eingabe}
 Die Journal Datei wird zeilenweise eingelesen. Dabei wird die Kopfzeile mit den Spaltenüberschriften ignoriert und beginnend mit der ersten inhaltlichen Zeile die Verarbeitung gestartet.\\
@@ -14,16 +14,16 @@ Die Verarbeitung nutzt das Prinzip des Gruppenwechsels. Dieses lässt sich anwen
 Dabei wird die Datei zeilenweise eingelesen und etappenweise ausgewertet.
 
 \subsubsection{Initialieren des Kunden}\label{subsubsec:initialisieren-des-kunden}
-Im ersten Schritt wird der aktuelle Kunde ermittelt und initialisiert. Bei der Initialisierung wird die Kunden-ID gespeichert und die beden Werte Position und Gesamtkosten in ihren Startzustand versetzt. Beide Werten werden in den weiteren Verarbeitungsschritten genutzt.\\
-Außerdem wird die Rechnungdatei befüllt. Dabei wird die Kunden-ID als Überschrift gesetzt und die Kopfzeile der Tabelle zum auflisten der jeweiligen Leistungen gedruckt.\\
+Im ersten Schritt wird der aktuelle Kunde ermittelt und initialisiert. Bei der Initialisierung wird die Kunden-ID gespeichert und die beiden Werte Position und Gesamtkosten in ihren Startzustand versetzt. Beide Werten werden in den weiteren Verarbeitungsschritten genutzt.\\
+Außerdem wird die Rechnungdatei befüllt. Dabei wird die Kunden-ID als Überschrift gesetzt und die Kopfzeile der Tabelle zum Auflisten der jeweiligen Leistungen gedruckt.\\
 
 \subsubsection{Initialieren der Leistung}\label{subsubsec:initialisieren-der-leistung}
-Anschließend wird die aktuelle Leistung initialisiert. Analog zur Kunden Initialierung wird die Leistungs-ID gespeichert. Außerdem wird die zu sammelnde Anzahl, wie auch der aktuelle Gesamtpreis der Leistung in den Startzustand versetzt. Mit diesen wird ebenfalls erst später weitergearbeitet.\\
+Anschließend wird die aktuelle Leistung initialisiert. Analog zur Kunden Initialierung wird die Leistungs-ID gespeichert. Außerdem wird die zu sammelnde Anzahl, wie auch der aktuelle Gesamtpreis der Leistung, in den Startzustand versetzt. Mit diesen wird ebenfalls erst später weitergearbeitet.\\
 Nun wird die Position der Leistung um eins erhöht. Dieser Wert spiegelt die Anzahl an unterschiedlichen Leistungen eines Kunden wieder und wird mit jeder neuen Leistung inkrementiert.\\
 Für die Ermittlung der Leistungsbezeichnung wird ein Unterprogramm aufgerufen. Siehe \ref{subsubsec:ermittlung-der-leistungsbezeichnung}.\\
 
 \subsubsection{Verarbeitung}
-Im tiefsten Schritt des Gruppenwechsels wird die eingelesene Zeile final ausgewertet. Dazu wird die Anzahl der Leistung, um die im Satz angegebene Anzahl erhöht.\\
+Im tiefsten Schritt des Gruppenwechsels wird die eingelesene Zeile final ausgewertet. Dazu wird die Anzahl der Leistung um die im Satz angegebene Anzahl erhöht.\\
 Die Datei wird nun zeilenweise weiter eingelesen.\\
 Für jede neue Zeile wird die Anzahl der aktuellen Leistung hochgezählt. Anhand dieser kann dann später der Gesamtpreis für die jeweilige Leistung berechnet werden.\\
 Dies geschieht solange, bis sich entweder die Kunden-ID oder die Leistungs-ID ändert.
@@ -36,15 +36,15 @@ Nun wird der Prozess bei der Leistungsinitialisierung \ref{subsubsec:initialisie
 
 \subsubsection{Kunden-ID ändert sich}\label{subsubsec:kunden-id-aendert-sich}
 Ändert sich die Kunden-ID, so gilt der aktuelle Kunde als abgeschlossen.\\
-Um die Rechnung in der Ausgabedatei korrekt abzuspeichern werden die errechneten Gesamtkosten gedruckt. Anschließend wird die Rechnung optisch abgetrennt um weitere Kunden in die Rechnugnsdatei schreiben zu können.\\
+Um die Rechnung in der Ausgabedatei korrekt abzuspeichern werden die errechneten Gesamtkosten gedruckt. Anschließend wird die Rechnung optisch abgetrennt um weitere Kunden in die Rechnungsdatei schreiben zu können.\\
 Der Prozess wird nun in der Kundeninitialisierung \ref{subsubsec:initialisieren-des-kunden} mit der neuen Kunden-ID fortgesetzt.\\
 \\
 
-Sind alle Zeilen der Datei eingelesen, terminiert das Programm und schließt den Prozess ab.\\
+Sind alle Zeilen der Datei eingelesen terminiert das Programm und schließt den Prozess ab.\\
 
 \subsubsection{Ermittlung der Leistungsbezeichnung}\label{subsubsec:ermittlung-der-leistungsbezeichnung}
-Initial wird die Leistungsbezeichnung mit \enquote{Unbekannt} befüllt. Dies ist ein sicherheitsmechanismus, da nicht gewährleistet ist, dass jede Leisungs-ID dem Glossar bekannt ist. Da alle für die Rechnung relevanten Informationen bereits im Journal aufzufinden sind, soll es in diesem Fall keinen Programmabruch geben\\
-Um die Leistungsbezeichnung zu ermitteln, wird die Leistungs-ID mit dem Leistungsglossar verglichen.\\
+Initial wird die Leistungsbezeichnung mit \enquote{Unbekannt} befüllt. Dies ist ein Sicherheitsmechanismus, da nicht gewährleistet ist, dass jede Leisungs-ID dem Glossar bekannt ist. Da alle für die Rechnung relevanten Informationen bereits im Journal aufzufinden sind soll es in diesem Fall keinen Programmabruch geben\\
+Um die Leistungsbezeichnung zu ermitteln wird die Leistungs-ID mit dem Leistungsglossar verglichen.\\
 Dazu wird das gennante Glossar zeilenweise eingelesen. Eine Zeile besteht dabei aus einer Leistungs-ID und einer mit \enquote{:} getrennten Leistungsbeschreibung.\\
 Wird im Glossar die gesuchte Leistungs-ID gefunden, so wird die Leistungsbezeichnung mit der zur ID passenden Leistungsbezeichnung überschrieben und zurück an den Hauptablauf übergeben.\\
 
@@ -52,7 +52,7 @@ Wird im Glossar die gesuchte Leistungs-ID gefunden, so wird die Leistungsbezeich
 Die genutzten Datenstrukturen lassen sich in zwei Kategorien einteilen.\\
 
 \subsection{Datenspeicherstrukturen}\label{subsubsec:dynamische-datenstrukturen}
-Die Datenspeicherstrukturen dienen zum speichern und verarbeiten der Daten.\\
+Die Datenspeicherstrukturen dienen zum Speichern und Verarbeiten der Daten.\\
 Diese lassen sich wiederum in zwei Kategorien einteilen.\\
 
 \subsubsection{Eingabespeicher}\label{subsubsubsec:eingabespeicher}
